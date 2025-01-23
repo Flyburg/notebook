@@ -151,9 +151,6 @@ nav:
         - 随机算法: study/course/ads/lec13.md
       - 人工智能引论:
         - study/course/ai/index.md
-      - 汇编与接口:
-        - study/course/asm/index.md
-        - 简介与数字表示: study/course/asm/ch1.md
     - 其他技能学习:
       - HTML 学习:
         - study/self/html/index.md
