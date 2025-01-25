@@ -1,7 +1,7 @@
 # [Info]
-site_name: Frankoxer 的小站
-site_url: https://frankoxer.github.io/
-site_description: Frankoxer 的个人网站
+site_name: Fanovian 的笔记本
+site_url: https://fanovian.github.io/
+site_description: Fanovian 的个人网站
 
 ############################################################################################
 
@@ -16,24 +16,27 @@ theme:
     text: Mukta
     code: Fira Code
   palette:
-    - scheme: default # 日间模式
-      primary: white # 上方的
-      accent: brown # 链接等可交互元件的高亮色
+    - scheme: default         # 日间模式
+      primary: teal           # 主色
+      accent: brown           # 链接等可交互元件的高亮色
       toggle:
         icon: material/toggle-switch-off-outline # 图标
-        name: Switch to dark mode # 鼠标悬浮提示
-    - scheme: slate # 夜间模式
+        name: Dark Mode       # 鼠标悬浮提示
+    - scheme: slate           # 夜间模式
       primary: black
       accent: grey
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
+        name: Light Mode
   features:
+    - navigation.instant   #- header.autohide  #自动隐藏
+    - navigation.tracking   #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
     #- navigation.footer # 底部的翻页
     # - navigation.expand # 打开Tab时左侧目录全部展开
+    - search.share   #搜索分享按钮
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
@@ -48,7 +51,7 @@ repo_url: https://github.com/Frankoxer/frankoxer.github.io # 右上角点击跳�
 repo_name: frankoxer.github.io # 右上角的名字
 
 ## [bottom-left corner]
-copyright: Copyright © 2023-2024 Frankoxer # 左下角的版权声明
+copyright: Copyright © 2023-2025 Fanovian # 左下角的版权声明
 
 ## [bottom-right corner]
 extra:
@@ -57,8 +60,8 @@ extra:
       link: https://space.bilibili.com/85414704
       name: Bilibili | 五伏亿安 # 鼠标悬浮提示
     - icon: fontawesome/brands/github
-      link: https://github.com/frankoxer
-      name: GitHub | Frankoxer
+      link: https://github.com/fanovian
+      name: GitHub | Fanovian
 
 ############################################################################################
 
