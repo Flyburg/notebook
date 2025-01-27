@@ -108,6 +108,10 @@ nostatistics: true
   </div>
 </div>
 
+<p style="text-align: center; font-size: 0.9em; color: #888;">
+（左右滑动查看更多）
+</p>
+
 
 <p style="text-align: center;">
 · 点击上方的导航栏可以查看不同的分类<br>
