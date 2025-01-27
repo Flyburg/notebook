@@ -33,7 +33,7 @@ theme:
         icon: material/toggle-switch-off-outline
         name: 切换至跟随系统模式
   features:
-    - announce.dismiss
+    # - announce.dismiss
     - navigation.instant   #- header.autohide  #自动隐藏
     - navigation.instant.progress
     - navigation.tracking   #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
