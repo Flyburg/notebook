@@ -1,5 +1,6 @@
 ---
 comments: true
+nostatistics: true
 ---
 
 # Fundamentals of Data Structures

@@ -29,6 +29,7 @@ A binomial queue is not a heap-ordered tree, but rather a collection of heap-ord
   <img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/20240330205517.png" alt="image-20240330205517" style="zoom:67%;" />
   
   注意 attach 的时候把大的接到小的上面以维持最小堆特性。而且要把森林里的树按照高度逆序排序。
+
 * **Insert**: 是合并的一种特殊情况。不多说。
 
 !!! note "空二项堆插入"

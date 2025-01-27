@@ -1,0 +1,48 @@
+/* 设置两栏布局 */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 左右各占一半 */
+    gap: 2rem; /* 左右栏之间的间距 */
+    margin-top: 2rem;
+  }
+  
+  /* 左栏样式 */
+  .left-column {
+    padding: 1rem;
+    border-right: 2px solid #ddd; /* 左侧加分隔线 */
+  }
+  
+  /* 右栏样式 */
+  .right-column {
+    padding: 1rem;
+  }
+  
+  /* 响应式布局：窄屏下垂直排列 */
+  @media (max-width: 768px) {
+    .two-column {
+      grid-template-columns: 1fr; /* 改为单列布局 */
+    }
+  
+    .left-column,
+    .right-column {
+      border-right: none; /* 移除分隔线 */
+    }
+  }
+
+
+#typed-container {
+  display: fixed; /* 固定定位 */
+  justify-content: center; /* 水平居中 */
+  text-align: center;
+}
+
+#typed {
+  font-size: xx-large;
+  font-weight: bold; /* 加粗字体 */
+  color: var(--md-primary-fg-color);
+  padding: 0.5rem; /* 内边距 */
+}
+
+[data-md-color-scheme="slate"] #typed {
+  color: #c0dcff; /* 蓝色 */
+}

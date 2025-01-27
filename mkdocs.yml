@@ -1,35 +1,41 @@
 # [Info]
-site_name: Fanovian 的笔记本
+site_name: Fanovian's Notebook
 site_url: https://fanovian.github.io/
-site_description: Fanovian 的个人网站
-
-############################################################################################
+site_description: Fanovian 的笔记本
 
 # [UI]
 ## [top]
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/images/logo.png # 左上角的logo
-  favicon: assets/images/logo.png
+  favicon: https://s2.loli.net/2025/01/27/oFMcIOLbZstxUjH.png
   font:
     text: Mukta
     code: Fira Code
   palette:
-    - scheme: default         # 日间模式
-      primary: teal           # 主色
-      accent: brown           # 链接等可交互元件的高亮色
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline # 图标
-        name: Dark Mode       # 鼠标悬浮提示
-    - scheme: slate           # 夜间模式
-      primary: black
-      accent: grey
+        icon: material/auto-fix
+        name: 切换至日间模式
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: custom
       toggle:
         icon: material/toggle-switch
-        name: Light Mode
+        name: 切换至夜间模式
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换至跟随系统模式
   features:
+    - announce.dismiss
     - navigation.instant   #- header.autohide  #自动隐藏
+    - navigation.instant.progress
     - navigation.tracking   #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
@@ -43,84 +49,105 @@ theme:
     - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
   language: zh # 一些提示性的文字会变成中文
   icon:
-    repo: fontawesome/brands/git-alt
+    repo: fontawesome/brands/github
+    logo: material/notebook
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
 ## [top-right corner]
-repo_url: https://github.com/Frankoxer/frankoxer.github.io # 右上角点击跳转的链接
-repo_name: frankoxer.github.io # 右上角的名字
+repo_url: https://github.com/Fanovian/fanovian.github.io # 右上角的GitHub链接
+repo_name: Fanovian's Notebook # 鼠标悬浮提示
 
 ## [bottom-left corner]
-copyright: Copyright © 2023-2025 Fanovian # 左下角的版权声明
+copyright: Copyright &copy; 2023 - 2025 Fanovian
 
 ## [bottom-right corner]
 extra:
   social: # icons
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/85414704
-      name: Bilibili | 五伏亿安 # 鼠标悬浮提示
+      name: Bilibili | Fanovian # 鼠标悬浮提示
     - icon: fontawesome/brands/github
       link: https://github.com/fanovian
       name: GitHub | Fanovian
-
-############################################################################################
+    - icon: material/email
+      link: mailto:<fanovian@outlook.com>
+      name: Email | Fanovian
 
 # [Extensions]
 plugins:
-  - search: # 现在还不支持中文搜索 支持之后可以设置语言
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+  - search:
+      separator: '[\s\u200b\-]'
       lang:
         - en
         - ja
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  - statistics:
+      page_check_metadata: comments
+      exclude_path: about/
 
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
-      generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
-  - toc:
-      permalink: true # 固定标题位置为当前位置
-  - pymdownx.highlight: # 代码块高亮
-      linenums: true # 显示行号
-      auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
-  - meta # 支持Markdown文件上方自定义标题标签等
-  - admonition
-  - pymdownx.details # admonition需要
-  - toc:
-      permalink: true
-      toc_depth: 4
+  # - abbr
   - meta
-  - tables
   - def_list
+  - attr_list
+  # - admonition
+  # - footnotes
   - md_in_html
   - sane_lists
+  - admonition
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  # - pymdownx.caret
   - pymdownx.critic
+  # - pymdownx.betterem
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.magiclink
+  # - pymdownx.smartsymbols
+  - pymdownx.superfences
   - pymdownx.inlinehilite
-  - pymdownx.smartsymbols  #智能符号
+  # - markdown.extensions.attr_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format:
+  #           pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+      linenums_style: pymdownx-inline
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_javascript:
-  # latex支持
-  # check https://squidfunk.github.io/mkdocs-material/reference/mathjax/?h=math for more information
-  # notice `curl https://polyfill.io/v3/polyfill.min.js?features=es6 > docourse/mkdocourse/javascripts/polyfill.min.js && curl https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js > docourse/mkdocourse/javascripts/tex-mml-chtml.js` not works... because there are other resources that need to load
-  # - mkdocourse/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
+  # - https://cdn.jsdelivr.net/npm/typed.js@2.0.12
+  # - javascripts/typed.js
 extra_css:
-  #- mkdocourse/css/no-footer.css # 不使用底部的翻页
-  #- mkdocourse/css/unordered-list-symbols.css # multiplt unordered list symbols
+  - stylesheets/extra.css
+  - stylesheets/document.css
+  - stylesheets/friends.css
+  - stylesheets/file.css
+  - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #字体
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
-############################################################################################
 
 #[Navigation]
 nav: 
@@ -154,7 +181,7 @@ nav:
         - 随机算法: study/course/ads/lec13.md
       - 人工智能引论:
         - study/course/ai/index.md
-    - 其他技能学习:
+    - 技能学习:
       - HTML 学习:
         - study/self/html/index.md
         - HTML 简介: study/self/html/lec1.md
@@ -167,6 +194,8 @@ nav:
         - 背景样式: study/self/css/lec2.md
   - 实践:
     - practice/index.md
-    - C++ 项目管理与工程实践: practice/MyMUG.md
-  - 关于:
-    - about/index.md
+    - C++项目管理与工程实践: practice/MyMUG.md
+  - 友链: 
+    - link/friends.md
+    - 如何加入友链: link/join.md
+  - 关于: about/index.md

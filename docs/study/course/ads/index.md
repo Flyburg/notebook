@@ -1,5 +1,6 @@
 ---
 comments: true
+nostatistics: true
 ---
 
 # Advanced Data Structures and Algorithm Analysis

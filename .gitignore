@@ -1,3 +1,18 @@
-.obsidian
-.idea
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
 
+# MkDocs
+site/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

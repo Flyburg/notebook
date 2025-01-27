@@ -1,7 +1,3 @@
----
-comments: true
----
-
 # Practice
 
 本页面用来记录一些课程外学习和实践心得。
