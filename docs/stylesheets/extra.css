@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Menlo";
+    src: "../assets/fonts/Menlo-Regular.ttf";
+}
+
+@font-face {
+    font-family: "Monaco";
+    src: "../assets/fonts/monaco.ttf";
+}
+
 :root {
     --md-primary-fg-color:        #3b6ca9;
     --md-primary-fg-color--light: #3b6ca9;
@@ -5,7 +15,7 @@
     --md-accent-fg-color:         #2195f3;
 
     --md-text-font: "LXGW WenKai Screen";
-    --md-code-font: "JetBrains Mono", "LXGW WenKai Screen";
+    --md-code-font: "Menlo", "LXGW WenKai Screen";
 }
 
 [data-md-color-scheme="default"] {
