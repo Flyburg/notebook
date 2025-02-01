@@ -1,6 +1,6 @@
 # [Info]
 site_name: Fanovian's Notebook
-site_url: https://fanovian.github.io/
+site_url: https://note.fanovian.cc/
 site_description: Fanovian 的笔记本
 
 # [UI]
@@ -54,7 +54,7 @@ theme:
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
 ## [top-right corner]
-repo_url: https://github.com/Fanovian/fanovian.github.io # 右上角的GitHub链接
+repo_url: https://github.com/Fanovian/notebook # 右上角的GitHub链接
 repo_name: Fanovian's Notebook # 鼠标悬浮提示
 
 ## [bottom-left corner]
