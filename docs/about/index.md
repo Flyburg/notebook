@@ -19,6 +19,7 @@ statistics: true
 - **[:fontawesome-brands-github: My GitHub](https://github.com/fanovian)**
 - **[:fontawesome-brands-bilibili: My Bilibili](https://space.bilibili.com/85414704)**
 - **[:material-email: My Email](mailto:<fanovian@outlook.com>)**
+- **[:fontawesome-solid-blog: My Blog](https://blog.fanovian.cc/)**
 
 <h2>关于本站</h2>
 

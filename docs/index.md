@@ -12,7 +12,7 @@ nostatistics: true
 
 > <span id="daily-quote" style="font-style: italic; color: #555;">正在加载一言...</span>
 <script>
-  fetch('https://v1.hitokoto.cn/?c=a&c=d&c=i')
+  fetch('https://v1.hitokoto.cn/?c=i&c=k&c=l')
     .then(response => response.json())
     .then(data => {
       document.getElementById('daily-quote').innerText = data.hitokoto;
