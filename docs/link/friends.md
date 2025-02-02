@@ -26,6 +26,15 @@ nostatistics: true
     </div>
     <div class="friend-link" onclick="window.location.href='https://github.com/Argonding'"></div>
   </div>
+
+  <div class="friend-card" style="--base-color: var(--color-purple);">
+    <img src="https://griseo.nimo.page/img/head.jpg" alt="avatar" class="friend-avatar">
+    <div class="friend-info">
+      <div class="friend-name">永恒闪电</div>
+      <p class="friend-description">他的...个人简历？</p>
+    </div>
+    <div class="friend-link" onclick="window.location.href='https://griseo.nimo.page/about.html'"></div>
+  </div>
 </div>
 
 <!-- 添加更多友链 -->
