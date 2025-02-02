@@ -63,6 +63,9 @@ copyright: Copyright &copy; 2023 - 2025 Fanovian
 ## [bottom-right corner]
 extra:
   social: # icons
+    - icon: fontawesome/solid/blog
+      link: https://blog.fanovian.cc/
+      name: Blog | Fanovian
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/85414704
       name: Bilibili | Fanovian # 鼠标悬浮提示
@@ -150,50 +153,47 @@ extra_css:
 #[Navigation]
 nav: 
   - 主页: index.md
-  - 学习: 
-    - study/index.md
-    - 校内课程:
-      - 程序设计与算法基础: study/course/fpa/final-exam-re.md
-      - 数据结构基础:
-        - study/course/ds/index.md
-        - 算法分析基础: study/course/ds/ch1.md
-        - 线性数据结构: study/course/ds/ch2.md
-        - 树: study/course/ds/ch3.md
-        - 图: study/course/ds/ch4.md
-        - 排序: study/course/ds/ch5.md
-        - 散列: study/course/ds/ch6.md
-      - 高级数据结构与算法分析:
-        - study/course/ads/index.md
-        - AVL/Splay/摊还分析: study/course/ads/lec1.md
-        - 红黑树/B+ 树: study/course/ads/lec2.md
-        - 倒排索引: study/course/ads/lec3.md
-        - 左式堆与斜堆: study/course/ads/lec4.md
-        - 二项堆: study/course/ads/lec5.md
-        - 回溯: study/course/ads/lec6.md
-        - 分治法: study/course/ads/lec7.md
-        - 动态规划: study/course/ads/lec8.md
-        - 贪心算法: study/course/ads/lec9.md
-        - NP: study/course/ads/lec10.md
-        - 近似算法: study/course/ads/lec11.md
-        - 局部搜索: study/course/ads/lec12.md
-        - 随机算法: study/course/ads/lec13.md
-      - 人工智能引论:
-        - study/course/ai/index.md
-    - 技能学习:
-      - HTML 学习:
-        - study/self/html/index.md
-        - HTML 简介: study/self/html/lec1.md
-        - 段落与基本格式: study/self/html/lec2.md
-        - 其他格式: study/self/html/lec3.md
-        - 其他元素: study/self/html/lec4.md
-      - CSS 学习:
-        - study/self/css/index.md
-        - CSS 简介: study/self/css/lec1.md
-        - 背景样式: study/self/css/lec2.md
-  - 实践:
-    - practice/index.md
-    - C++项目管理与工程实践: practice/MyMUG.md
+  - 课程: 
+    - course/index.md
+    - 程序设计与算法基础: course/fpa/final-exam-re.md
+    - 数据结构基础:
+      - course/ds/index.md
+      - 算法分析基础: course/ds/ch1.md
+      - 线性数据结构: course/ds/ch2.md
+      - 树: course/ds/ch3.md
+      - 图: course/ds/ch4.md
+      - 排序: course/ds/ch5.md
+      - 散列: course/ds/ch6.md
+    - 人工智能引论:
+      - course/ai/index.md
+    - 高级数据结构与算法分析:
+      - course/ads/index.md
+      - AVL/Splay/摊还分析: course/ads/lec1.md
+      - 红黑树/B+ 树: course/ads/lec2.md
+      - 倒排索引: course/ads/lec3.md
+      - 左式堆与斜堆: course/ads/lec4.md
+      - 二项堆: course/ads/lec5.md
+      - 回溯: course/ads/lec6.md
+      - 分治法: course/ads/lec7.md
+      - 动态规划: course/ads/lec8.md
+      - 贪心算法: course/ads/lec9.md
+      - NP: course/ads/lec10.md
+      - 近似算法: course/ads/lec11.md
+      - 局部搜索: course/ads/lec12.md
+      - 随机算法: course/ads/lec13.md
+  - 自学:
+    - self/index.md
+    - HTML 学习:
+      - self/html/index.md
+      - HTML 简介: self/html/lec1.md
+      - 段落与基本格式: self/html/lec2.md
+      - 其他格式: self/html/lec3.md
+      - 其他元素: self/html/lec4.md
+    - CSS 学习:
+      - self/css/index.md
+      - CSS 简介: self/css/lec1.md
+      - 背景样式: self/css/lec2.md
   - 友链: 
-    - link/friends.md
+    - 友链: link/friends.md
     - 如何加入友链: link/join.md
   - 关于: about/index.md
