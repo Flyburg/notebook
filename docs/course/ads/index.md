@@ -1,8 +1,3 @@
----
-comments: true
-nostatistics: true
----
-
 # 高级数据结构与算法分析
 
 - **课程名称**：高级数据结构与算法分析（**A**dvanced **D**ata **S**tructures and Algorithm Analysis）

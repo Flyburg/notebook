@@ -40,7 +40,7 @@ theme:
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    #- navigation.footer # 底部的翻页
+    # - navigation.footer # 底部的翻页
     # - navigation.expand # 打开Tab时左侧目录全部展开
     - search.share   #搜索分享按钮
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
@@ -146,6 +146,7 @@ extra_css:
   - stylesheets/document.css
   - stylesheets/friends.css
   - stylesheets/file.css
+  - stylesheets/page.css
   - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #字体
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
@@ -193,9 +194,9 @@ nav:
       - self/css/index.md
       - CSS 简介: self/css/lec1.md
       - 背景样式: self/css/lec2.md
-    - Mkdocs 网页:
-      - self/mkdocs/index.md
-      - 简介与准备工作: self/mkdocs/ready.md
+    # - Mkdocs 网页:
+    #   - self/mkdocs/index.md
+    #   - 简介与准备工作: self/mkdocs/ready.md
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md

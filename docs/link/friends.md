@@ -35,6 +35,15 @@ nostatistics: true
     </div>
     <div class="friend-link" onclick="window.location.href='https://griseo.nimo.page/about.html'"></div>
   </div>
+
+  <div class="friend-card" style="--base-color: var(--color-blue);">
+    <img src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" alt="avatar" class="friend-avatar">
+    <div class="friend-info">
+      <div class="friend-name">Wcowin's Blog</div>
+      <p class="friend-description">循此苦旅，以达星辰</p>
+    </div>
+    <div class="friend-link" onclick="window.location.href='https://wcowin.work/'"></div>
+  </div>
 </div>
 
 <!-- 添加更多友链 -->

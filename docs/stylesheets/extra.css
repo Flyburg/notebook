@@ -8,6 +8,12 @@
     src: "../assets/fonts/monaco.ttf";
 }
 
+@media screen {
+    html {
+        font-size: 130%;
+    }
+}
+
 :root {
     --md-primary-fg-color:        #3b6ca9;
     --md-primary-fg-color--light: #3b6ca9;

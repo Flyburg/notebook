@@ -1,8 +1,3 @@
----
-comments: true
-nostatistics: true
----
-
 # 数据结构基础
 
 - **课程名称**：数据结构基础（**F**undamentals of **D**ata **S**tructures）
