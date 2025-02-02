@@ -157,13 +157,13 @@ nav:
     - course/index.md
     - 程序设计与算法基础: course/fpa/final-exam-re.md
     - 数据结构基础:
-      - course/ds/index.md
-      - 算法分析基础: course/ds/ch1.md
-      - 线性数据结构: course/ds/ch2.md
-      - 树: course/ds/ch3.md
-      - 图: course/ds/ch4.md
-      - 排序: course/ds/ch5.md
-      - 散列: course/ds/ch6.md
+      - course/fds/index.md
+      - 算法分析基础: course/fds/ch1.md
+      - 线性数据结构: course/fds/ch2.md
+      - 树: course/fds/ch3.md
+      - 图: course/fds/ch4.md
+      - 排序: course/fds/ch5.md
+      - 散列: course/fds/ch6.md
     - 人工智能引论:
       - course/ai/index.md
     - 高级数据结构与算法分析:
@@ -193,6 +193,9 @@ nav:
       - self/css/index.md
       - CSS 简介: self/css/lec1.md
       - 背景样式: self/css/lec2.md
+    - Mkdocs 网页:
+      - self/mkdocs/index.md
+      - 简介与准备工作: self/mkdocs/ready.md
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md
