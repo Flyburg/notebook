@@ -16,4 +16,5 @@ jobs: # 工作流的具体内容
           python-version: 3.x
       - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
       - run: pip install mkdocs-statistics-plugin # 安装mkdocs-statistics-plugin
+      - run: pip install mkdocs-add-number-plugin # 安装mkdocs-add-number-plugin
       - run: mkdocs gh-deploy --force # 使用mkdocs-material部署gh-pages分支

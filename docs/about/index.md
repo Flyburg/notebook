@@ -30,5 +30,6 @@ statistics: true
 
 
 <h3>致谢</h3>
-- 本站在建立时深受 Bilibili UP 主【杨希杰619】的视频 [GitHub Pages 个人网站构建与发布](https://www.bilibili.com/video/BV1hL4y1w72r) 的启发，在个性化修改时参考了 GitHub 用户【Wcowin】的 [Mkdocs博客主题](https://wcowin.work/Mkdocs-Wcowin/)，还运用到了 xg 的统计数据插件 [mkdocs-statistics-plugin](https://github.com/TonyCrane/mkdocs-statistics-plugin)，在此表示感谢！
+- 本站在建立时深受 Bilibili UP 主【杨希杰619】的视频 [GitHub Pages 个人网站构建与发布](https://www.bilibili.com/video/BV1hL4y1w72r) 的启发，在个性化修改时参考了 GitHub 用户【Wcowin】的 [Mkdocs博客主题](https://wcowin.work/Mkdocs-Wcowin/)，还运用到了 xg 的统计数据插件 [mkdocs-statistics-plugin](https://github.com/TonyCrane/mkdocs-statistics-plugin) 以及 ignorantshr 
+和 timvink 开发的自动标题插件 [mkdocs-add-number-plugin](https://github.com/ignorantshr/mkdocs-add-number-plugin)，在此表示感谢！
 - 网站的设计思路还受到许多大佬们的启发，在此一并感谢！

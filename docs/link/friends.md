@@ -6,7 +6,7 @@ comments: true
 nostatistics: true  
 ---
 
-# Friends
+# 朋友们
 
 <div class="friends-container">
   <div class="friend-card" style="--base-color: var(--color-blue);">

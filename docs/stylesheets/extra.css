@@ -18,7 +18,7 @@
     --md-primary-fg-color:        #3b6ca9;
     --md-primary-fg-color--light: #3b6ca9;
     --md-primary-fg-color--dark:  #3b6ca9;
-    --md-accent-fg-color:         #2195f3;
+    --md-accent-fg-color:         #3b6ca9;
 
     --md-text-font: "LXGW WenKai Screen";
     --md-code-font: "Menlo", "LXGW WenKai Screen";
@@ -32,19 +32,19 @@
 }
 
 [data-md-color-scheme="slate"] {
-    --md-default-bg-color: #050505;
+    --md-default-bg-color: #131313;
     /* --md-default-bg-color--light: #161616;
     --md-default-bg-color--lighter: #161616;
     --md-default-bg-color--lightest: #161616; */
-    --md-default-fg-color: rgba(255, 253, 253, 0.756);
-    --md-default-fg-color--light: rgba(255, 255, 255, 0.814);
+    --md-default-fg-color: rgba(255, 253, 253, 0.868);
+    --md-default-fg-color--light: rgba(255, 255, 255, 0.854);
     --md-default-fg-color--lighter: rgba(255, 255, 255, 0.393);
     --md-default-fg-color--lightest: rgba(255, 255, 255, 0.58);
-    --md-primary-fg-color: #1a3556;
-    --md-typeset-a-color: #d3d3d3;
+    --md-primary-fg-color: #0e0e0e;
+    --md-typeset-a-color: #ffffff;
     --md-footer-fg-color: #fff;
-    --md-footer-bg-color: #060606;
-    --md-footer-bg-color--dark: #060606;
+    --md-footer-bg-color: var(--md-default-bg-color);
+    --md-footer-bg-color--dark: var(--md-default-bg-color);
     --md-footer-fg-color--light: #ffffffc3;
     --md-footer-fg-color--lighter: #ffffffc4;
     --md-code-bg-color: #1c1c1c;

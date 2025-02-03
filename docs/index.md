@@ -70,7 +70,7 @@ nostatistics: true
 <!-- 推荐阅读 --->
 
 
-<h2>近期更新 · 推荐</h2>
+<h3>近期更新 · 推荐</h3>
 
 <div class="article-scroll">
   <div class="article-container">
@@ -210,8 +210,8 @@ nostatistics: true
   /* 为夜间模式特别指定渐变 */
   [data-md-color-scheme="slate"] .article-card {
     background: linear-gradient(135deg, 
-      var(--md-primary-fg-color), 
-      color-mix(in srgb, var(--md-primary-fg-color) 40%, black)
+rgb(61, 64, 68), 
+      color-mix(in srgb,rgb(27, 28, 29) 40%, black)
     );
   }
   

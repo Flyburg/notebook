@@ -9,9 +9,9 @@ theme:
   name: material
   custom_dir: overrides
   favicon: https://s2.loli.net/2025/01/27/oFMcIOLbZstxUjH.png
-  font:
-    text: Mukta
-    code: Fira Code
+  # font:
+  #   text: Mukta
+  #   code: Fira Code
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -21,14 +21,14 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default 
-      primary: custom
+      primary: var(--md-primary-fg-color)
       toggle:
         icon: material/toggle-switch
         name: 切换至夜间模式
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
+      primary: var(--md-primary-fg-color)
       toggle:
         icon: material/toggle-switch-off-outline
         name: 切换至跟随系统模式
@@ -87,6 +87,14 @@ plugins:
   - statistics:
       page_check_metadata: comments
       exclude_path: about/
+  - add-number:
+      strict_mode: False
+      order: 2
+      excludes: 
+        - course/ads/
+        - course/fds/
+        - course/ai/
+        - self/html/
 
 markdown_extensions:
   # - abbr
@@ -107,13 +115,13 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.magiclink
-  # - pymdownx.smartsymbols
+  - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.inlinehilite
   # - markdown.extensions.attr_list
   - toc:
       permalink: true
-      toc_depth: 3
+      toc_depth: 4
   # - pymdownx.superfences:
   #     custom_fences:
   #       - name: mermaid
@@ -146,7 +154,6 @@ extra_css:
   - stylesheets/document.css
   - stylesheets/friends.css
   - stylesheets/file.css
-  - stylesheets/page.css
   - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #字体
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
@@ -154,10 +161,10 @@ extra_css:
 #[Navigation]
 nav: 
   - 主页: index.md
-  - 课程: 
+  - 课程:
     - course/index.md
     - 程序设计与算法基础: course/fpa/final-exam-re.md
-    - 数据结构基础:
+    - 数据结构基础: 
       - course/fds/index.md
       - 算法分析基础: course/fds/ch1.md
       - 线性数据结构: course/fds/ch2.md
@@ -165,7 +172,7 @@ nav:
       - 图: course/fds/ch4.md
       - 排序: course/fds/ch5.md
       - 散列: course/fds/ch6.md
-    - 人工智能引论:
+    - 人工智能引论: 
       - course/ai/index.md
     - 高级数据结构与算法分析:
       - course/ads/index.md
@@ -194,9 +201,13 @@ nav:
       - self/css/index.md
       - CSS 简介: self/css/lec1.md
       - 背景样式: self/css/lec2.md
-    # - Mkdocs 网页:
-    #   - self/mkdocs/index.md
-    #   - 简介与准备工作: self/mkdocs/ready.md
+    - Mkdocs 网页:
+      - self/mkdocs/index.md
+      - 简介与准备工作: self/mkdocs/ready.md
+      - 本地构建网站: self/mkdocs/build.md
+      - 部署到 gh-pages: self/mkdocs/deploy.md
+      - 高级配置: self/mkdocs/advanced.md
+      - 相关资源: self/mkdocs/resource.md
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md

@@ -7,5 +7,5 @@
 | **前端开发基础** |
 | [HTML 学习](./html/index.md) | 翁恺《HTML 入门》 | 已完成 |
 | [CSS 学习](./css/index.md) | 翁恺《CSS 入门》 | *未完成* |
-<!-- | **我的网站制作** |
-| [我的 MkDocs 笔记本](./mkdocs/index.md) | MKDocs 官方文档等 | *未完成* | -->
+| **MkDocs 相关** |
+| [MkDocs 网页制作](./mkdocs/index.md) | MkDocs 官方文档等 | 已完成 |

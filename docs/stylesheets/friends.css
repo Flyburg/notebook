@@ -48,7 +48,7 @@
       color-mix(in srgb, var(--base-color) 50%, black),
       color-mix(in srgb, var(--base-color) 20%, black)
     );
-    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 6px rgba(82, 82, 82, 0.25);
   }
 
   .friend-card:hover {

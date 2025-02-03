@@ -44,5 +44,32 @@
 }
 
 [data-md-color-scheme="slate"] #typed {
-  color: #9b9c9d; /* 蓝色 */
+  color: #d9d9d9; /* 蓝色 */
 }
+
+.md-typeset h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  letter-spacing: 0;
+}
+
+/* .md-typeset {
+  font-size: .75rem;
+} */
+
+/* .md-typeset code:not(pre code) {
+  font-size: inherit;
+} */
