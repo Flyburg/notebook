@@ -94,6 +94,7 @@ plugins:
         - course/ads/
         - course/fds/
         - course/ai/
+        - course/arch/
         - self/html/
 
 markdown_extensions:
@@ -189,6 +190,10 @@ nav:
       - 近似算法: course/ads/lec11.md
       - 局部搜索: course/ads/lec12.md
       - 随机算法: course/ads/lec13.md
+    - 计算机体系结构:
+      - course/arch/index.md
+    - 编译原理:
+      - course/comp/index.md
   - 自学:
     - self/index.md
     - HTML 学习:

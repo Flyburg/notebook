@@ -75,35 +75,25 @@ nostatistics: true
 <div class="article-scroll">
   <div class="article-container">
     <div class="article-card">
+      <h3>计算机体系结构</h3>
+      <div class="article-meta">
+        <span>复习资料 · 硬件设计</span>
+      </div>
+      <div class="card-link" onclick="window.location.href='/course/arch'"></div>
+    </div>
+    <div class="article-card">
+      <h3>MkDocs 网页生成与部署</h3>
+      <div class="article-meta">
+        <span>实践记录 · 前端开发 · HTML</span>
+      </div>
+      <div class="card-link" onclick="window.location.href='/self/mkdocs'"></div>
+    </div>
+    <div class="article-card">
       <h3>高级数据结构与算法分析</h3>
       <div class="article-meta">
         <span>课程笔记 · 数据结构与算法 · C 语言</span>
       </div>
-      <div class="card-link" onclick="window.location.href='/study/course/ads'"></div>
-    </div>
-    
-    <div class="article-card">
-      <h3>数据结构基础</h3>
-      <div class="article-meta">
-        <span>课程笔记 · 数据结构与算法 · C 语言</span>
-      </div>
-      <div class="card-link" onclick="window.location.href='/study/course/ds'"></div>
-    </div>
-
-    <div class="article-card">
-      <h3>C++ 项目管理与工程实践</h3>
-      <div class="article-meta">
-        <span>实践记录 · 软件工程 · C++</span>
-      </div>
-      <div class="card-link" onclick="window.location.href='/practice/MyMUG'"></div>
-    </div>
-
-    <div class="article-card">
-      <h3>HTML 学习笔记</h3>
-      <div class="article-meta">
-        <span>学习笔记 · 前端开发 · HTML</span>
-      </div>
-      <div class="card-link" onclick="window.location.href='/study/self/html'"></div>
+      <div class="card-link" onclick="window.location.href='/course/ads'"></div>
     </div>
   </div>
 </div>
