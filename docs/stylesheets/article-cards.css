@@ -67,9 +67,9 @@ rgb(61, 64, 68),
     right: 14px;
     transform: translateY(-50%); /* 向上移动自身高度的一半 */
     color: rgba(0, 0, 0, 0.189);
-    font-family: 'Smiley Sans';
+    font-family: 'Smiley Sans Oblique';
     font-size: 9em;
-    font-weight: 400;
+    font-weight: normal;
     z-index: 1;
     pointer-events: none;  /* 禁用鼠标事件 */
 }

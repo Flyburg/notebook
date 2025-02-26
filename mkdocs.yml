@@ -156,6 +156,7 @@ extra_css:
   - stylesheets/file.css
   - stylesheets/article-cards.css
   - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #字体
+  - https://static.zeoseven.com/zsft/92/main/result.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
 

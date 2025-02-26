@@ -1,9 +1,4 @@
 @font-face {
-    font-family: "Smiley Sans";
-    src: url("../assets/fonts/SmileySans-Oblique.ttf") format("truetype");
-}
-
-@font-face {
     font-family: "Menlo";
     src: url("../assets/fonts/Menlo-Regular.ttf") format("truetype");
 }
