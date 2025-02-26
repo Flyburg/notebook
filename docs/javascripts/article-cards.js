@@ -1,56 +1,75 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // 获取文章统计信息
-  function getArticleStats(path) {
-    // 这里需要通过 mkdocs-statistics-plugin 提供的 API 获取统计信息
-    // 示例数据结构
-    return fetch(`/statistics/${path}.json`)
-      .then(response => response.json())
-      .then(data => ({
-        wordCount: data.word_count,
-        readingTime: Math.ceil(data.word_count / 200) // 假设阅读速度为每分钟200字
-      }));
+function createCard(cardData) {
+  return `
+    <div class="article-card">
+      <div class="article-meta">${cardData.meta}</div>
+      <div class="article-title">${cardData.title}</div>
+      <div class="article-abb">${cardData.abb}</div>
+      <div class="card-link" onclick="window.location.href='${cardData.link}'"></div>
+    </div>
+  `;
+}
+
+
+function showRandomCard(isFirstLoad = true) {
+  const container = document.getElementById('card-container');
+  const switchButton = document.getElementById('switchButton');
+  let randomIndex;
+  
+  // 只在首次加载时隐藏按钮
+  if (isFirstLoad && switchButton) {
+      switchButton.style.opacity = '0';
+      switchButton.style.visibility = 'hidden';
   }
+  
+  // 确保不会连续显示同一张卡片
+  do {
+      randomIndex = Math.floor(Math.random() * cards.length);
+  } while (container.dataset.currentIndex === randomIndex.toString() && cards.length > 1);
+  
+  // 淡出
+  container.style.opacity = '0';
+  
+  // 等待淡出完成后更新内容
+  setTimeout(() => {
+      container.innerHTML = createCard(cards[randomIndex]);
+      container.dataset.currentIndex = randomIndex;
+      
+      // 强制浏览器重排
+      void container.offsetWidth;
+      
+      // 淡入卡片
+      requestAnimationFrame(() => {
+          container.style.opacity = '1';
+          
+          // 只在首次加载时延迟显示按钮
+          if (isFirstLoad && switchButton) {
+              setTimeout(() => {
+                  switchButton.style.visibility = 'visible';
+                  switchButton.style.opacity = '1';
+              }, 300);
+          }
+      });
+  }, 300);
+}
 
-  // 创建文章卡片
-  function createArticleCard(article) {
-    const card = document.createElement('div');
-    card.className = 'article-card';
-    card.onclick = () => window.location.href = article.path;
-    
-    card.innerHTML = `
-      <h3>${article.title}</h3>
-      <div class="article-meta">
-        <span>📝 约${article.wordCount}字</span>
-        <span>⏱️ 阅读时间：${article.readingTime}分钟</span>
-      </div>
-    `;
-    
-    return card;
+// 页面加载和切换时的事件处理
+document.addEventListener('DOMContentLoaded', () => {
+  // 首次加载显示随机卡片
+  showRandomCard(true);
+  
+  // 为按钮添加点击事件
+  const switchButton = document.getElementById('switchButton');
+  if (switchButton) {
+      switchButton.addEventListener('click', () => showRandomCard(false));
   }
+  
+  // 监听 MkDocs 页面切换事件
+  document.addEventListener('page', () => showRandomCard(true));
+});
 
-  // 初始化推荐阅读区域
-  async function initRecommendedReading() {
-    const container = document.querySelector('.article-cards');
-    if (!container) return;
-
-    // 定义推荐文章列表
-    const recommendedArticles = [
-      { path: '/programming/python/basic/', title: 'Python基础教程' },
-      { path: '/tools/git/', title: 'Git使用指南' }
-    ];
-
-    // 获取每篇文章的统计信息并创建卡片
-    for (const article of recommendedArticles) {
-      try {
-        const stats = await getArticleStats(article.path);
-        const cardData = { ...article, ...stats };
-        const card = createArticleCard(cardData);
-        container.appendChild(card);
-      } catch (error) {
-        console.error(`Failed to load stats for ${article.path}:`, error);
-      }
-    }
+// 监听页面可见性变化
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+      showRandomCard(true);
   }
-
-  initRecommendedReading();
-}); 
+});

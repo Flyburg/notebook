@@ -39,7 +39,7 @@
 #typed {
   font-size: xx-large;
   font-weight: bold; /* 加粗字体 */
-  color: var(--md-primary-fg-color);
+  color: #3b6ca9; /* 蓝色 */
   padding: 0.5rem; /* 内边距 */
 }
 

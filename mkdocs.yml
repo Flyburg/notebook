@@ -9,9 +9,9 @@ theme:
   name: material
   custom_dir: overrides
   favicon: https://s2.loli.net/2025/01/27/oFMcIOLbZstxUjH.png
-  # font:
-  #   text: Mukta
-  #   code: Fira Code
+  font:
+    text: LXGW WenKai Screen
+    code: Menlo
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -34,8 +34,6 @@ theme:
         name: 切换至跟随系统模式
   features:
     - announce.dismiss
-    - navigation.instant   #- header.autohide  #自动隐藏
-    - navigation.instant.progress
     - navigation.tracking   #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs # 使用Tab来进行分类
     - navigation.top # 返回顶部的按钮 在上滑时出现
@@ -149,12 +147,14 @@ markdown_extensions:
 extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - javascripts/mathjax.js
+  - javascripts/article-cards.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - stylesheets/extra.css
   - stylesheets/document.css
   - stylesheets/friends.css
   - stylesheets/file.css
+  - stylesheets/article-cards.css
   - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #字体
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 

@@ -1,11 +1,16 @@
 @font-face {
+    font-family: "Smiley Sans";
+    src: url("../assets/fonts/SmileySans-Oblique.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Menlo";
-    src: "../assets/fonts/Menlo-Regular.ttf";
+    src: url("../assets/fonts/Menlo-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Monaco";
-    src: "../assets/fonts/monaco.ttf";
+    src: url("../assets/fonts/monaco.ttf") format("truetype");
 }
 
 @media screen {
@@ -20,8 +25,8 @@
     --md-primary-fg-color--dark:  #3b6ca9;
     --md-accent-fg-color:         #3b6ca9;
 
-    --md-text-font: "LXGW WenKai Screen";
-    --md-code-font: "Menlo", "LXGW WenKai Screen";
+    /* --md-text-font: "LXGW WenKai Screen";
+    --md-code-font: "Menlo", "LXGW WenKai Screen"; */
 }
 
 [data-md-color-scheme="default"] {
