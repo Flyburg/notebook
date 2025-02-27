@@ -165,3 +165,58 @@ rgb(61, 64, 68),
 #card-container {
   transition: opacity 0.3s ease-in-out;
 }
+
+/* ...existing code... */
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .article-card {
+      width: 320px;  /* 减小卡片宽度 */
+      height: 160px; /* 减小卡片高度 */
+      padding: 12px; /* 稍微减小内边距 */
+  }
+
+  .article-title {
+      font-size: 1.6em; /* 减小标题字号 */
+      bottom: 8px;
+      left: 16px;
+      right: 12px;
+  }
+
+  .article-meta {
+      left: 16px;
+      font-size: 0.75em; /* 减小元数据字号 */
+  }
+
+  .article-abb {
+      font-size: 6em; /* 减小缩写字号 */
+      right: 12px;
+  }
+  
+  .switch-button {
+      padding: 6px 20px; /* 减小按钮尺寸 */
+      font-size: 0.85em; /* 减小按钮文字大小 */
+      margin: 16px auto; /* 调整按钮外边距 */
+  }
+}
+
+/* 更小屏幕的适配 */
+@media screen and (max-width: 480px) {
+  .article-card {
+      width: 280px;
+      height: 140px;
+      padding: 10px;
+  }
+
+  .article-title {
+      font-size: 1.4em;
+      bottom: 6px;
+      left: 14px;
+      right: 10px;
+  }
+
+  .article-abb {
+      font-size: 5em;
+      right: 10px;
+  }
+}

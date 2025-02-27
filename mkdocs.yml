@@ -40,6 +40,7 @@ theme:
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
     # - navigation.footer # 底部的翻页
     # - navigation.expand # 打开Tab时左侧目录全部展开
+    # - toc.follow
     - search.share   #搜索分享按钮
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
@@ -120,16 +121,18 @@ markdown_extensions:
   # - markdown.extensions.attr_list
   - toc:
       permalink: true
-      toc_depth: 4
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format:
-  #           pymdownx.superfences.fence_code_format # 代码块高亮插件
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      toc_depth: 4  # 将深度从 4 改为 2
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight: # 代码块高亮
       anchor_linenums: true
-      linenums: true # 显示行号
+      # linenums: true # 显示行号
       # auto_title: true # 显示编程语言名称
       linenums_style: pymdownx-inline
       line_spans: __span
@@ -195,6 +198,7 @@ nav:
       - course/arch/index.md
     - 编译原理:
       - course/comp/index.md
+      - 词法分析: course/comp/ch2.md
   - 自学:
     - self/index.md
     - HTML 学习:
