@@ -199,6 +199,7 @@ nav:
     - 编译原理:
       - course/comp/index.md
       - 词法分析: course/comp/ch2.md
+      - 语法分析: course/comp/ch3.md
   - 自学:
     - self/index.md
     - HTML 学习:
