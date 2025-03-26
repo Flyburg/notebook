@@ -44,6 +44,15 @@ nostatistics: true
     </div>
     <div class="friend-link" onclick="window.location.href='https://wcowin.work/'"></div>
   </div>
+
+  <div class="friend-card" style="--base-color: var(--color-purple);">
+    <img src="https://avatars.githubusercontent.com/u/139060797?s=400&u=f60d19e28c620478e42bb68c705f47bbdfb71d96&v=4" alt="avatar" class="friend-avatar">
+    <div class="friend-info">
+      <div class="friend-name">月全食的小本本</div>
+      <p class="friend-description">丢掉幻想 准备斗争</p>
+    </div>
+    <div class="friend-link" onclick="window.location.href='https://eclipseyue.github.io/'"></div>
+  </div>
 </div>
 
 <!-- 添加更多友链 -->
