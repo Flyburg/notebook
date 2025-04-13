@@ -19,7 +19,7 @@ comments: true
 
 ### 代码字体
 
-笔者使用的代码字体是 Apple 当前的默认编程字体 Menlo，可以查看[此页面](https://github.com/ueaner/fonts)下载。
+笔者使用的代码字体是 [Maple Font](https://github.com/subframe7536/maple-font)，具体可以前往其[官网](https://font.subf.dev/)查看。
 
 ## 图标
 

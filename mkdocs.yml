@@ -11,7 +11,7 @@ theme:
   favicon: https://s2.loli.net/2025/01/27/oFMcIOLbZstxUjH.png
   font:
     text: LXGW WenKai Screen
-    code: Menlo
+    code: Maple Mono
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
