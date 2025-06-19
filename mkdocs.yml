@@ -200,6 +200,15 @@ nav:
       - course/comp/index.md
       - 词法分析: course/comp/ch2.md
       - 语法分析: course/comp/ch3.md
+      - 抽象语法: course/comp/ch4.md
+      - 语义分析: course/comp/ch5.md
+      - 活动记录: course/comp/ch6.md
+      - 中间代码: course/comp/ch7.md
+      - 基本块划分: course/comp/ch8.md
+      - 指令选择: course/comp/ch9.md
+      - 活跃分析: course/comp/ch10.md
+      - 寄存器分配: course/comp/ch11.md
+      - 垃圾回收: course/comp/ch13.md
   - 自学:
     - self/index.md
     - HTML 学习:
