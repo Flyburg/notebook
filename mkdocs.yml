@@ -208,7 +208,6 @@ nav:
       - 指令选择: course/comp/ch9.md
       - 活跃分析: course/comp/ch10.md
       - 寄存器分配: course/comp/ch11.md
-      - 垃圾回收: course/comp/ch13.md
   - 自学:
     - self/index.md
     - HTML 学习:
