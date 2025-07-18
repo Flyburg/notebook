@@ -24,10 +24,10 @@
 }
 
 :root {
-    --md-primary-fg-color:        #3b6ca9;
-    --md-primary-fg-color--light: #3b6ca9;
-    --md-primary-fg-color--dark:  #3b6ca9;
-    --md-accent-fg-color:         #3b6ca9;
+    --md-primary-fg-color:        #0287ac;
+    --md-primary-fg-color--light: #0287ac;
+    --md-primary-fg-color--dark:  #0287ac;
+    --md-accent-fg-color:         #0287ac;
 
     /* --md-text-font: "LXGW WenKai Screen";
     --md-code-font: "Menlo", "LXGW WenKai Screen"; */
@@ -49,7 +49,7 @@
     --md-default-fg-color--light: rgba(255, 255, 255, 0.854);
     --md-default-fg-color--lighter: rgba(255, 255, 255, 0.393);
     --md-default-fg-color--lightest: rgba(255, 255, 255, 0.58);
-    --md-primary-fg-color: #0e0e0e;
+    --md-primary-fg-color: #1f1e33;
     --md-typeset-a-color: #ffffff;
     --md-footer-fg-color: #fff;
     --md-footer-bg-color: var(--md-default-bg-color);

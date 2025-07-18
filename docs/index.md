@@ -11,16 +11,16 @@ home: true
 
 <!-- 一言 --->
 
-> *小店新开，老板里面请！*
+<!-- > *小店新开，老板里面请！* -->
 
-<!-- > <span id="daily-quote" style="font-style: italic; color: #555;">正在加载一言...</span>
+> <span id="daily-quote" style="font-style: italic;">正在加载一言...</span>
 <script>
   fetch('https://v1.hitokoto.cn/?c=i&c=k&c=l')
     .then(response => response.json())
     .then(data => {
       document.getElementById('daily-quote').innerText = data.hitokoto;
     });
-</script> -->
+</script>
 
 <h1>
 <div id="typed-container">
@@ -31,7 +31,7 @@ home: true
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script>
 new Typed('#typed', {
-  strings: ['欢迎看看我的笔记🫰'
+  strings: ['欢迎看看我的笔记！'
   ],
   typeSpeed: 80,
   showCursor: false
@@ -62,10 +62,10 @@ const cards = [
     link: "/course/ads"
   },
   {
-    meta: "复习笔记 · 程序设计",
-    title: "程序设计与算法基础",
-    abb: "FPA",
-    link: "/course/fpa/final-exam-re"
+    meta: "学习笔记 · 编译原理",
+    title: "编译原理",
+    abb: "Compile",
+    link: "/course/comp"
   },
   {
     meta: "学习笔记 · 前端设计",

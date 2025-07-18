@@ -7,7 +7,7 @@
 #typed {
   font-size: xx-large;
   font-weight: bold; /* 加粗字体 */
-  color: #3b6ca9; /* 蓝色 */
+  color: #0287ac; /* 蓝色 */
   padding: 0.5rem; /* 内边距 */
 }
 
@@ -18,19 +18,19 @@
 .md-typeset h1 {
   font-weight: 600;
   font-size: 1.4rem;
-  color: #3b6ca9;
+  color: #0287ac;
 }
 
 .md-typeset h2 {
   font-weight: 600;
   font-size: 1.2rem;
-  color: #3b6da9ed;
+  color: #0287aced;
 }
 
 .md-typeset h3 {
   font-weight: 600;
   font-size: 1.0rem;
-  color: #3b6da9a5;
+  color: #0287aca5;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1 {

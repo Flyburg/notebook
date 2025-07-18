@@ -230,4 +230,6 @@ nav:
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md
-  - 关于: about/index.md
+  - 关于:
+    - about/index.md
+    - 彩蛋: about/tips.md
