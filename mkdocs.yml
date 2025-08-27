@@ -1,5 +1,5 @@
 # [Info]
-site_name: Fanovian's Notebook
+site_name: 零式岚的笔记本
 site_url: https://note.flyburg.cc/
 site_description: 零式岚的笔记本
 
@@ -63,17 +63,17 @@ copyright: Copyright &copy; 2023 - 2025 Fanovian
 extra:
   social: # icons
     - icon: fontawesome/solid/blog
-      link: https://blog.fanovian.cc/
-      name: Blog | Fanovian
+      link: https://blog.flyburg.cc/
+      name: Blog
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/85414704
-      name: Bilibili | Fanovian # 鼠标悬浮提示
+      name: Bilibili # 鼠标悬浮提示
     - icon: fontawesome/brands/github
-      link: https://github.com/fanovian
-      name: GitHub | Fanovian
+      link: https://github.com/flyburg
+      name: GitHub | Flyburg
     - icon: material/email
-      link: mailto:<fanovian@outlook.com>
-      name: Email | Fanovian
+      link: mailto:<flyburg@outlook.com>
+      name: Email
 
 # [Extensions]
 plugins:
