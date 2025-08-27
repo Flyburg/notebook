@@ -15,10 +15,10 @@ statistics: true
 <h2>关于我</h2>
 
 - 浙江大学 · 计算机科学与技术 · 本科
-- **[:fontawesome-brands-github: My GitHub](https://github.com/fanovian)**
+- **[:fontawesome-brands-github: My GitHub](https://github.com/flyburg)**
 - **[:fontawesome-brands-bilibili: My Bilibili](https://space.bilibili.com/85414704)**
-- **[:material-email: My Email](mailto:<fanovian@outlook.com>)**
-- **[:fontawesome-solid-blog: My Blog](https://blog.fanovian.cc/)**
+- **[:material-email: My Email](mailto:<flyburg@outlook.com>)**
+- **[:fontawesome-solid-blog: My Blog](https://blog.flyburg.cc/)**
 
 <h2>关于本站</h2>
 
