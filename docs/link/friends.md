@@ -12,10 +12,10 @@ nostatistics: true
   <div class="friend-card" style="--base-color: var(--color-blue);">
     <img src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" alt="avatar" class="friend-avatar">
     <div class="friend-info">
-      <div class="friend-name">Fanovian 的笔记本</div>
-      <p class="friend-description">“无论过去，不问将来。”</p>
+      <div class="friend-name">零式岚の地下室</div>
+      <p class="friend-description">正解は無いんだ</p>
     </div>
-    <div class="friend-link" onclick="window.location.href='https://fanovian.github.io'"></div>
+    <div class="friend-link" onclick="window.location.href='https://blog.flyburg.cc/'"></div>
   </div>
 
   <div class="friend-card" style="--base-color: var(--color-red);">
