@@ -10,7 +10,7 @@ nostatistics: true
 
 <div class="friends-container">
   <div class="friend-card" style="--base-color: var(--color-blue);">
-    <img src="https://s2.loli.net/2025/01/25/x4aS23Z1uypqhc7.jpg" alt="avatar" class="friend-avatar">
+    <img src="https://s2.loli.net/2025/08/27/upk6cA1sbjGICdq.png" alt="avatar" class="friend-avatar">
     <div class="friend-info">
       <div class="friend-name">零式岚の地下室</div>
       <p class="friend-description">正解は無いんだ</p>

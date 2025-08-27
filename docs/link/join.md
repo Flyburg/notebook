@@ -22,7 +22,7 @@
 
 ```css
 :root {
-    --color-blue: #3b6ca9;
+    --color-blue: #0287ac;
     --color-pink: #c179b4;
     --color-red: #d45151;
     --color-orange: #e39b2f;

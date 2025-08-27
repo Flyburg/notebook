@@ -9,7 +9,7 @@ statistics: true
 <h1></h1>
 
 <div align="center">
-  <img src="../assets/images/icon-boy-circle-transparent.png" width=250>
+  <img src="https://s2.loli.net/2025/08/27/oihwQUc2gJ1OCbl.png" width=250>
 </div>
 
 <h2>关于我</h2>
