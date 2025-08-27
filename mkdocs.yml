@@ -53,11 +53,11 @@ theme:
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
 ## [top-right corner]
-repo_url: https://github.com/Fanovian/notebook # 右上角的GitHub链接
-repo_name: Fanovian's Notebook # 鼠标悬浮提示
+repo_url: https://github.com/Flyburg/notebook # 右上角的GitHub链接
+repo_name: Flyburg's Notebook # 鼠标悬浮提示
 
 ## [bottom-left corner]
-copyright: Copyright &copy; 2023 - 2025 Fanovian
+copyright: Copyright &copy; 2023 - 2025 零式岚
 
 ## [bottom-right corner]
 extra:
