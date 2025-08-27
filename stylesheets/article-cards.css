@@ -1,0 +1,222 @@
+.article-card {
+  /* flex: 0 0 250px; */
+  height: 200px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(135deg, 
+    var(--md-primary-fg-color), 
+    color-mix(in srgb, var(--md-primary-fg-color) 65%, white)
+  );
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: start;
+  z-index: 0;
+}
+  
+/* 为日间模式特别指定渐变 */
+[data-md-color-scheme="default"] .article-card {
+  background: linear-gradient(135deg, 
+    var(--md-primary-fg-color), 
+    color-mix(in srgb, var(--md-primary-fg-color) 50%, white)
+  );
+}
+
+/* 为夜间模式特别指定渐变 */
+[data-md-color-scheme="slate"] .article-card {
+  background: linear-gradient(135deg, 
+rgb(61, 64, 68), 
+    color-mix(in srgb,rgb(27, 28, 29) 40%, black)
+  );
+}
+
+.article-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article-title {
+  position: absolute;
+  bottom: 10px; /* 与卡片的 padding 值保持一致 */
+  left: 20px;
+  right: 14px;
+  color: white;
+  font-size: 2.3em;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  z-index: 2;
+  pointer-events: none;  /* 禁用鼠标事件 */
+}
+  
+.article-meta {
+  position: absolute;
+  left: 20px;
+  flex-direction: column;
+  gap: 6px; /* 减小间距 */
+  color: rgb(255, 255, 255);
+  font-size: 0.8em; /* 稍微减小字号 */
+  /* align-items: center; */
+  pointer-events: none;  /* 禁用鼠标事件 */
+}
+
+.article-abb {
+    position: absolute;
+    top: 50%; /* 将元素的顶部放在父元素的中间位置 */
+    right: 14px;
+    transform: translateY(-50%); /* 向上移动自身高度的一半 */
+    color: rgba(0, 0, 0, 0.189);
+    font-family: 'Smiley Sans Oblique';
+    font-size: 9em;
+    font-weight: normal;
+    z-index: 1;
+    pointer-events: none;  /* 禁用鼠标事件 */
+}
+  
+.card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 12px; /* 匹配卡片圆角 */
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.05));
+  transition: background 0.3s;
+}
+
+.card-link:hover {
+  background: linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+}
+
+/* 在文件末尾或合适位置添加 */
+@keyframes green-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    /* 偏一点绿色 */
+    filter: hue-rotate(15deg) saturate(1.2);
+  }
+  50% {
+    /* 再变回来 */
+    filter: hue-rotate(0deg) saturate(1);
+  }
+  75% {
+    /* 偏一点黄色 */
+    filter: hue-rotate(-15deg) saturate(1.2);
+  }
+  100% {
+    filter: hue-rotate(0deg) saturate(1);
+    background-position: 0% 50%;
+  }
+}
+
+.article-card {
+  /* 已有样式保持不变，只需补充以下几行： */
+  background-size: 200% 200%;              /* 给背景动画预留移动空间 */
+  animation: green-shift 6s ease-in-out infinite; /* 6 秒完成一次往返 */
+}
+
+.switch-button {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 24px;  /* 增加水平内边距使按钮更长 */
+  background: linear-gradient(135deg, 
+    var(--md-primary-fg-color), 
+    color-mix(in srgb, var(--md-primary-fg-color) 65%, white)
+  );
+  color: white;
+  border: none;
+  border-radius: 50px;  /* 胶囊形状 */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  animation: green-shift 6s ease-in-out infinite;  /* 与卡片动画一致 */
+  opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.switch-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 为日间模式特别指定渐变 */
+[data-md-color-scheme="default"] .switch-button {
+  background: linear-gradient(135deg, 
+    var(--md-primary-fg-color), 
+    color-mix(in srgb, var(--md-primary-fg-color) 50%, white)
+  );
+}
+
+/* 为夜间模式特别指定渐变 */
+[data-md-color-scheme="slate"] .switch-button {
+  background: linear-gradient(135deg, 
+    rgb(61, 64, 68), 
+    color-mix(in srgb,rgb(27, 28, 29) 40%, black)
+  );
+}
+
+/* 添加卡片容器的过渡效果 */
+#card-container {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ...existing code... */
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .article-card {
+      width: 320px;  /* 减小卡片宽度 */
+      height: 160px; /* 减小卡片高度 */
+      padding: 12px; /* 稍微减小内边距 */
+  }
+
+  .article-title {
+      font-size: 1.6em; /* 减小标题字号 */
+      bottom: 8px;
+      left: 16px;
+      right: 12px;
+  }
+
+  .article-meta {
+      left: 16px;
+      font-size: 0.75em; /* 减小元数据字号 */
+  }
+
+  .article-abb {
+      font-size: 6em; /* 减小缩写字号 */
+      right: 12px;
+  }
+  
+  .switch-button {
+      padding: 6px 20px; /* 减小按钮尺寸 */
+      font-size: 0.85em; /* 减小按钮文字大小 */
+      margin: 16px auto; /* 调整按钮外边距 */
+  }
+}
+
+/* 更小屏幕的适配 */
+@media screen and (max-width: 480px) {
+  .article-card {
+      width: 280px;
+      height: 140px;
+      padding: 10px;
+  }
+
+  .article-title {
+      font-size: 1.4em;
+      bottom: 6px;
+      left: 14px;
+      right: 10px;
+  }
+
+  .article-abb {
+      font-size: 5em;
+      right: 10px;
+  }
+}
