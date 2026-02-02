@@ -1,0 +1,58 @@
+#typed-container {
+  display: fixed; /* 固定定位 */
+  justify-content: center; /* 水平居中 */
+  text-align: center;
+}
+
+#typed {
+  font-size: xx-large;
+  font-weight: bold; /* 加粗字体 */
+  color: #0287ac; /* 蓝色 */
+  padding: 0.5rem; /* 内边距 */
+}
+
+[data-md-color-scheme="slate"] #typed {
+  color: #ebe9e9; /* 蓝色 */
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #0287ac;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0287aced;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 1.0rem;
+  color: #0287aca5;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #eaeaea;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #e4e4e4;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #dadada;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  letter-spacing: 0;
+}
+
+/* .md-typeset {
+  font-size: .8rem;
+} */
+
+.md-typeset code:not(pre code) {
+  font-size: .7rem;
+}

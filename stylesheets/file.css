@@ -1,0 +1,62 @@
+:root {
+    --file-card-bg: #f5f5f5;
+    --file-card-hover: #e8e8e8;
+  }
+  
+  [data-md-color-scheme="slate"] {
+    --file-card-bg: #2b2b2b;
+    --file-card-hover: #363636;
+  }
+  
+  .file-block {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 12px;
+    background: var(--file-card-bg);
+    transition: background 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .file-block:hover {
+    background: var(--file-card-hover);
+  }
+  
+  .file-icon {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .file-body {
+    flex: 1;
+  }
+  
+  .file-title {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .file-meta {
+    font-size: 0.85em;
+    color: var(--md-default-fg-color--light);
+  }
+  
+  .down-button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color) !important;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .down-button:hover {
+    opacity: 0.8;
+  }
