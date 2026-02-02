@@ -1,7 +1,7 @@
 # [Info]
-site_name: 零式岚的笔记本
+site_name: 雨露霜雪的笔记本
 site_url: https://note.flyburg.cc/
-site_description: 零式岚的笔记本
+site_description: 雨露霜雪的笔记本
 
 # [UI]
 ## [top]
@@ -11,7 +11,7 @@ theme:
   favicon: https://s2.loli.net/2025/01/27/oFMcIOLbZstxUjH.png
   font:
     text: LXGW WenKai Screen
-    code: Maple Mono
+    code: Monaco
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -57,7 +57,7 @@ repo_url: https://github.com/Flyburg/notebook # 右上角的GitHub链接
 repo_name: Flyburg's Notebook # 鼠标悬浮提示
 
 ## [bottom-left corner]
-copyright: Copyright &copy; 2023 - 2025 零式岚
+copyright: Copyright &copy; 2023 - 2026 雨露霜雪
 
 ## [bottom-right corner]
 extra:

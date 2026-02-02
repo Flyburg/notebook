@@ -1,7 +1,7 @@
 ---
 comments: true
 # nostatistics: true
-statistics: true
+statistics: false
 ---
 
 > *“消えたかった 私はもういない”*

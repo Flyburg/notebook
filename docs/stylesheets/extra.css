@@ -8,6 +8,11 @@
     src: url("../assets/fonts/monaco.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "SmileySans-Oblique";
+    src: url("../assets/fonts/SmileySans-Oblique.ttf") format("truetype");
+}
+
 /* maple-mono-latin-400-normal */
 @font-face {
     font-family: 'Maple Mono';
