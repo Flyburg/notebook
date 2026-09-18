@@ -12,10 +12,10 @@ nostatistics: true
   <div class="friend-card" style="--base-color: var(--color-blue);">
     <img src="https://s2.loli.net/2025/08/27/upk6cA1sbjGICdq.png" alt="avatar" class="friend-avatar">
     <div class="friend-info">
-      <div class="friend-name">雨露霜雪のBlog</div>
+      <div class="friend-name">羽城のBlog</div>
       <p class="friend-description">正解は無いんだ</p>
     </div>
-    <div class="friend-link" onclick="window.location.href='https://blog.flyburg.cc/'"></div>
+    <div class="friend-link" onclick="window.location.href='https://flyburg.cc/'"></div>
   </div>
 
   <div class="friend-card" style="--base-color: var(--color-red);">

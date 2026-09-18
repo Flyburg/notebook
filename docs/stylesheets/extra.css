@@ -13,6 +13,23 @@
     src: url("../assets/fonts/SmileySans-Oblique.ttf") format("truetype");
 }
 
+/* zen-maru-gothic-latin (英文正文) */
+@font-face {
+    font-family: 'Zen Maru Gothic';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/zen-maru-gothic@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/zen-maru-gothic@latest/latin-500-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/zen-maru-gothic@latest/latin-500-normal.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Zen Maru Gothic';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/zen-maru-gothic@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/zen-maru-gothic@latest/latin-700-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/zen-maru-gothic@latest/latin-700-normal.ttf) format('truetype');
+}
+
 /* maple-mono-latin-400-normal */
 @font-face {
     font-family: 'Maple Mono';
@@ -34,8 +51,9 @@
     --md-primary-fg-color--dark:  #0287ac;
     --md-accent-fg-color:         #0287ac;
 
-    /* --md-text-font: "LXGW WenKai Screen";
-    --md-code-font: "Menlo", "LXGW WenKai Screen"; */
+    /* 英文使用 Zen Maru Gothic，中文回退到霞鹜文楷 */
+    --md-text-font: "Zen Maru Gothic", "LXGW WenKai Screen";
+    /* --md-code-font: "Menlo", "LXGW WenKai Screen"; */
 }
 
 [data-md-color-scheme="default"] {
@@ -67,6 +85,12 @@
 .md-header__title {
     font-weight: bold;
     font-family: "LXGW Wenkai Screen", sans-serif;
+}
+
+/* 修正统计信息行中图标与文字的垂直对齐
+   （Zen Maru Gothic 的 ascent 远大于 Roboto，text-top 会使图标偏高） */
+.md-typeset div[style*="margin-top: -30px"] .twemoji {
+    vertical-align: -0.2em;
 }
 
 @font-face {

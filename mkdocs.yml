@@ -1,7 +1,7 @@
 # [Info]
-site_name: 雨露霜雪的笔记本
+site_name: 羽城的笔记本
 site_url: https://note.flyburg.cc/
-site_description: 雨露霜雪的笔记本
+site_description: 羽城的笔记本
 
 # [UI]
 ## [top]
@@ -57,7 +57,7 @@ repo_url: https://github.com/Flyburg/notebook # 右上角的GitHub链接
 repo_name: Flyburg's Notebook # 鼠标悬浮提示
 
 ## [bottom-left corner]
-copyright: Copyright &copy; 2023 - 2026 雨露霜雪
+copyright: Copyright &copy; 2023 - 2026 羽城
 
 ## [bottom-right corner]
 extra:
@@ -158,7 +158,7 @@ extra_css:
   - stylesheets/friends.css
   - stylesheets/file.css
   - stylesheets/article-cards.css
-  - https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css #字体
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css #字体
   - https://static.zeoseven.com/zsft/92/main/result.css
   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
 
