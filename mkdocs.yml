@@ -63,7 +63,7 @@ copyright: Copyright &copy; 2023 - 2026 羽城
 extra:
   social: # icons
     - icon: fontawesome/solid/blog
-      link: https://blog.flyburg.cc/
+      link: https://flyburg.cc/
       name: Blog
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/85414704
@@ -166,7 +166,7 @@ extra_css:
 #[Navigation]
 nav: 
   - 主页: index.md
-  - 课程:
+  - 学校课程:
     - course/index.md
     - 程序设计与算法基础: course/fpa/final-exam-re.md
     - 数据结构基础: 
@@ -208,7 +208,7 @@ nav:
       - 指令选择: course/comp/ch9.md
       - 活跃分析: course/comp/ch10.md
       - 寄存器分配: course/comp/ch11.md
-  - 自学:
+  - 自学笔记:
     - self/index.md
     - HTML 学习:
       - self/html/index.md
@@ -232,4 +232,3 @@ nav:
     - 如何加入友链: link/join.md
   - 关于:
     - about/index.md
-    - 彩蛋: about/tips.md

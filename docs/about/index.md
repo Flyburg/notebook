@@ -15,7 +15,8 @@ hide:
 
 <h2>关于我</h2>
 
-- 浙江大学 · 计算机科学与技术 · 本科
+- 浙江大学 · 计算机科学与技术 · 本科毕业
+- 浙江大学 · 大数据技术与工程 · 研究生在读
 - **[:fontawesome-brands-github: My GitHub](https://github.com/flyburg)**
 - **[:fontawesome-brands-bilibili: My Bilibili](https://space.bilibili.com/85414704)**
 - **[:material-email: My Email](mailto:<flyburg@outlook.com>)**

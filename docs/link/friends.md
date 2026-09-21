@@ -10,7 +10,7 @@ nostatistics: true
 
 <div class="friends-container">
   <div class="friend-card" style="--base-color: var(--color-blue);">
-    <img src="https://s2.loli.net/2025/08/27/upk6cA1sbjGICdq.png" alt="avatar" class="friend-avatar">
+    <img src="https://bee-reg-ab.imagency.cn/mr/6175/26/58ed5b59c6ed9ff04506d982b0dd582c.jpg" alt="avatar" class="friend-avatar">
     <div class="friend-info">
       <div class="friend-name">羽城のBlog</div>
       <p class="friend-description">正解は無いんだ</p>
