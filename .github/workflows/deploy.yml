@@ -1,31 +1,29 @@
-name: Build and Deploy to EdgeOne Pages
-
+name: CI
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
-
+    branches: [ "main" ]
 jobs:
-  deploy:
+  build:
+    env:
+      PYTHONPATH: .
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.13"
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+    - name: ⚙️ Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-      - name: Build MkDocs
-        run: python -m mkdocs build
+    - name: Setup GIT user
+      uses: fregante/setup-git-user@v1
 
-      - name: Deploy to EdgeOne Pages
-        uses: TencentEdgeOne/edgeone-pages-action@v1
-        with:
-          token: ${{ secrets.EDGEONE_PAGES }}
-          project-name: "notebook-mkdocs"
-          build-path: "./site"
+    - name: 🏗️ Publish Site
+      run: mkdocs gh-deploy
