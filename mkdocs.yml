@@ -227,6 +227,10 @@ nav:
       - 部署到 gh-pages: self/mkdocs/deploy.md
       - 高级配置: self/mkdocs/advanced.md
       - 相关资源: self/mkdocs/resource.md
+    - CS186 数据库系统导论:
+      - self/cs186/index.md
+      - 简介: self/cs186/lec1.md
+      - SQL Ⅰ: self/cs186/lec2.md
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md
