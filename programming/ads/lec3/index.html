@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://note.flyburg.cc/link/friends/">
+        <link rel="canonical" href="https://note.flyburg.cc/programming/ads/lec3/">
       
       
-        <link rel="prev" href="../../tools/mkdocs/resource/">
+        <link rel="prev" href="../lec2/">
       
       
-        <link rel="next" href="../join/">
+        <link rel="next" href="../lec4/">
       
       
         
@@ -27,14 +27,14 @@
     
     
       
-        <title>友链 - 羽城的笔记本</title>
+        <title>倒排索引 - 羽城的笔记本</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,15 +53,15 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../stylesheets/document.css">
+      <link rel="stylesheet" href="../../../stylesheets/document.css">
     
-      <link rel="stylesheet" href="../../stylesheets/friends.css">
+      <link rel="stylesheet" href="../../../stylesheets/friends.css">
     
-      <link rel="stylesheet" href="../../stylesheets/file.css">
+      <link rel="stylesheet" href="../../../stylesheets/file.css">
     
-      <link rel="stylesheet" href="../../stylesheets/article-cards.css">
+      <link rel="stylesheet" href="../../../stylesheets/article-cards.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
     
@@ -69,7 +69,7 @@
     
       <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#朋友们" class="md-skip">
+        <a href="#lecture-3-inverted-file-index" class="md-skip">
           跳转至
         </a>
       
@@ -108,7 +108,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="羽城的笔记本" class="md-header__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
+    <a href="../../.." title="羽城的笔记本" class="md-header__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"/></svg>
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              友链
+              倒排索引
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -273,11 +273,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../programming/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -299,7 +301,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../system/" class="md-tabs__link">
+        <a href="../../../system/" class="md-tabs__link">
           
   
   
@@ -321,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../application/" class="md-tabs__link">
+        <a href="../../../application/" class="md-tabs__link">
           
   
   
@@ -343,7 +345,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ai/" class="md-tabs__link">
+        <a href="../../../ai/" class="md-tabs__link">
           
   
   
@@ -365,7 +367,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../thesis/" class="md-tabs__link">
+        <a href="../../../thesis/" class="md-tabs__link">
           
   
   
@@ -387,7 +389,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tools/" class="md-tabs__link">
+        <a href="../../../tools/" class="md-tabs__link">
           
   
   
@@ -405,13 +407,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../link/friends/" class="md-tabs__link">
           
   
   
@@ -433,7 +433,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/" class="md-tabs__link">
+        <a href="../../../about/" class="md-tabs__link">
           
   
   
@@ -469,7 +469,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="羽城的笔记本" class="md-nav__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
+    <a href="../../.." title="羽城的笔记本" class="md-nav__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"/></svg>
@@ -499,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -523,6 +523,8 @@
       
   
   
+    
+  
   
   
     
@@ -542,18 +544,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../programming/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -571,13 +576,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -597,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fpa/" class="md-nav__link">
+      <a href="../../fpa/" class="md-nav__link">
         
   
   
@@ -658,7 +663,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../programming/fds/" class="md-nav__link ">
+            <a href="../../fds/" class="md-nav__link ">
               
   
   
@@ -702,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch1/" class="md-nav__link">
+      <a href="../../fds/ch1/" class="md-nav__link">
         
   
   
@@ -730,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch2/" class="md-nav__link">
+      <a href="../../fds/ch2/" class="md-nav__link">
         
   
   
@@ -758,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch3/" class="md-nav__link">
+      <a href="../../fds/ch3/" class="md-nav__link">
         
   
   
@@ -786,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch4/" class="md-nav__link">
+      <a href="../../fds/ch4/" class="md-nav__link">
         
   
   
@@ -814,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch5/" class="md-nav__link">
+      <a href="../../fds/ch5/" class="md-nav__link">
         
   
   
@@ -842,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch6/" class="md-nav__link">
+      <a href="../../fds/ch6/" class="md-nav__link">
         
   
   
@@ -875,6 +880,8 @@
                 
   
   
+    
+  
   
   
     
@@ -917,15 +924,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../programming/ads/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -949,7 +956,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -969,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec1/" class="md-nav__link">
+      <a href="../lec1/" class="md-nav__link">
         
   
   
@@ -997,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec2/" class="md-nav__link">
+      <a href="../lec2/" class="md-nav__link">
         
   
   
@@ -1022,10 +1029,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../programming/ads/lec3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    倒排索引
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1041,6 +1075,187 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-1-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 1 Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-2-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 2 Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 2 Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-21-word-stemming-and-stop-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 2.1 Word Stemming and Stop Filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-22-accessing-the-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 2.2 Accessing the Terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-23-memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 2.3 Memory Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-3-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 3 Topics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 3 Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-31-distributed-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 3.1 Distributed Indexing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-32-dynamic-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 3.2 Dynamic Indexing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-33-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 3.3 Compression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-34-thresholding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 3.4 Thresholding
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-4-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 4 Measures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 4 Measures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-41-measure-the-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 4.1 Measure the Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-42-measure-the-relevancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 4.2 Measure the Relevancy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1053,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec4/" class="md-nav__link">
+      <a href="../lec4/" class="md-nav__link">
         
   
   
@@ -1081,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec5/" class="md-nav__link">
+      <a href="../lec5/" class="md-nav__link">
         
   
   
@@ -1109,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec6/" class="md-nav__link">
+      <a href="../lec6/" class="md-nav__link">
         
   
   
@@ -1137,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec7/" class="md-nav__link">
+      <a href="../lec7/" class="md-nav__link">
         
   
   
@@ -1165,7 +1380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec8/" class="md-nav__link">
+      <a href="../lec8/" class="md-nav__link">
         
   
   
@@ -1193,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec9/" class="md-nav__link">
+      <a href="../lec9/" class="md-nav__link">
         
   
   
@@ -1221,7 +1436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec10/" class="md-nav__link">
+      <a href="../lec10/" class="md-nav__link">
         
   
   
@@ -1249,7 +1464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec11/" class="md-nav__link">
+      <a href="../lec11/" class="md-nav__link">
         
   
   
@@ -1277,7 +1492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec12/" class="md-nav__link">
+      <a href="../lec12/" class="md-nav__link">
         
   
   
@@ -1305,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec13/" class="md-nav__link">
+      <a href="../lec13/" class="md-nav__link">
         
   
   
@@ -1371,7 +1586,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../system/" class="md-nav__link ">
+            <a href="../../../system/" class="md-nav__link ">
               
   
   
@@ -1436,7 +1651,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../system/arch/" class="md-nav__link ">
+            <a href="../../../system/arch/" class="md-nav__link ">
               
   
   
@@ -1515,7 +1730,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../application/" class="md-nav__link ">
+            <a href="../../../application/" class="md-nav__link ">
               
   
   
@@ -1600,7 +1815,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../application/comp/" class="md-nav__link ">
+            <a href="../../../application/comp/" class="md-nav__link ">
               
   
   
@@ -1644,7 +1859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch2/" class="md-nav__link">
+      <a href="../../../application/comp/ch2/" class="md-nav__link">
         
   
   
@@ -1672,7 +1887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch3/" class="md-nav__link">
+      <a href="../../../application/comp/ch3/" class="md-nav__link">
         
   
   
@@ -1700,7 +1915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch4/" class="md-nav__link">
+      <a href="../../../application/comp/ch4/" class="md-nav__link">
         
   
   
@@ -1728,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch5/" class="md-nav__link">
+      <a href="../../../application/comp/ch5/" class="md-nav__link">
         
   
   
@@ -1756,7 +1971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch6/" class="md-nav__link">
+      <a href="../../../application/comp/ch6/" class="md-nav__link">
         
   
   
@@ -1784,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch7/" class="md-nav__link">
+      <a href="../../../application/comp/ch7/" class="md-nav__link">
         
   
   
@@ -1812,7 +2027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch8/" class="md-nav__link">
+      <a href="../../../application/comp/ch8/" class="md-nav__link">
         
   
   
@@ -1840,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch9/" class="md-nav__link">
+      <a href="../../../application/comp/ch9/" class="md-nav__link">
         
   
   
@@ -1868,7 +2083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch10/" class="md-nav__link">
+      <a href="../../../application/comp/ch10/" class="md-nav__link">
         
   
   
@@ -1896,7 +2111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch11/" class="md-nav__link">
+      <a href="../../../application/comp/ch11/" class="md-nav__link">
         
   
   
@@ -1957,7 +2172,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../application/cs186/" class="md-nav__link ">
+            <a href="../../../application/cs186/" class="md-nav__link ">
               
   
   
@@ -2001,7 +2216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/cs186/lec1/" class="md-nav__link">
+      <a href="../../../application/cs186/lec1/" class="md-nav__link">
         
   
   
@@ -2029,7 +2244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/cs186/lec2/" class="md-nav__link">
+      <a href="../../../application/cs186/lec2/" class="md-nav__link">
         
   
   
@@ -2095,7 +2310,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ai/" class="md-nav__link ">
+            <a href="../../../ai/" class="md-nav__link ">
               
   
   
@@ -2160,7 +2375,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ai/ai_intro/" class="md-nav__link ">
+            <a href="../../../ai/ai_intro/" class="md-nav__link ">
               
   
   
@@ -2235,7 +2450,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../thesis/" class="md-nav__link ">
+            <a href="../../../thesis/" class="md-nav__link ">
               
   
   
@@ -2304,7 +2519,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tools/" class="md-nav__link ">
+            <a href="../../../tools/" class="md-nav__link ">
               
   
   
@@ -2379,7 +2594,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tools/mkdocs/" class="md-nav__link ">
+            <a href="../../../tools/mkdocs/" class="md-nav__link ">
               
   
   
@@ -2423,7 +2638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/ready/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/ready/" class="md-nav__link">
         
   
   
@@ -2451,7 +2666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/build/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/build/" class="md-nav__link">
         
   
   
@@ -2479,7 +2694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/deploy/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/deploy/" class="md-nav__link">
         
   
   
@@ -2507,7 +2722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/advanced/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/advanced/" class="md-nav__link">
         
   
   
@@ -2535,7 +2750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/resource/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/resource/" class="md-nav__link">
         
   
   
@@ -2575,10 +2790,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -2590,20 +2803,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2621,7 +2831,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2636,19 +2846,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../link/friends/" class="md-nav__link">
         
   
   
@@ -2664,7 +2865,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2677,7 +2877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../join/" class="md-nav__link">
+      <a href="../../../link/join/" class="md-nav__link">
         
   
   
@@ -2733,7 +2933,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../about/" class="md-nav__link ">
+            <a href="../../../about/" class="md-nav__link ">
               
   
   
@@ -2792,6 +2992,175 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-1-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 1 Structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-2-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 2 Modules
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 2 Modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-21-word-stemming-and-stop-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 2.1 Word Stemming and Stop Filter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-22-accessing-the-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 2.2 Accessing the Terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-23-memory-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 2.3 Memory Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-3-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 3 Topics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 3 Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-31-distributed-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 3.1 Distributed Indexing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-32-dynamic-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 3.2 Dynamic Indexing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-33-compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 3.3 Compression
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-34-thresholding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 3.4 Thresholding
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-4-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 4 Measures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 4 Measures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-41-measure-the-search-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 4.1 Measure the Search Engines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-42-measure-the-relevancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 4.2 Measure the Relevancy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2807,7 +3176,7 @@
 
 
   
-    <a href="https://github.com/Flyburg/notebook/edit/main/docs/link/friends.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Flyburg/notebook/edit/main/docs/programming/ads/lec3.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2815,55 +3184,139 @@
   
 
 
-<h1 id="朋友们">朋友们<a class="headerlink" href="#朋友们" title="Permanent link">&para;</a></h1>
-<div class="friends-container">
-  <div class="friend-card" style="--base-color: var(--color-blue);">
-    <img src="https://bee-reg-ab.imagency.cn/mr/6175/26/58ed5b59c6ed9ff04506d982b0dd582c.jpg" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">羽城のBlog</div>
-      <p class="friend-description">Alea jacta est!</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://flyburg.cc/'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-red);">
-    <img src="https://avatars.githubusercontent.com/u/147455218?v=4" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">皮大嘎</div>
-      <p class="friend-description">参与网站后期白嫖工作。</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://github.com/Argonding'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-purple);">
-    <img src="https://griseo.nimo.page/img/head.jpg" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">永恒闪电</div>
-      <p class="friend-description">他的...个人简历？</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://griseo.nimo.page/about.html'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-blue);">
-    <img src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">Wcowin's Blog</div>
-      <p class="friend-description">循此苦旅，以达星辰</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://wcowin.work/'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-purple);">
-    <img src="https://avatars.githubusercontent.com/u/139060797?s=400&u=f60d19e28c620478e42bb68c705f47bbdfb71d96&v=4" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">月全食的小本本</div>
-      <p class="friend-description">丢掉幻想 准备斗争</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://eclipseyue.github.io/'"></div>
-  </div>
+<h1 id="lecture-3-inverted-file-index">Lecture 3: Inverted File Index<a class="headerlink" href="#lecture-3-inverted-file-index" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 892 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l73.3-73.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 10 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 9 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 3 分钟</p>
 </div>
-
-<!-- 添加更多友链 -->
+<p>倒排索引。</p>
+<h2 id="1-1-structure">1. 1 Structure<a class="headerlink" href="#1-1-structure" title="Permanent link">&para;</a></h2>
+<p>The real <strong>key technique</strong> used by search engines.</p>
+<div class="admonition note">
+<p class="admonition-title">引入：举个栗子</p>
+<p>假如我们想搜索带有“Computer Science”关键词的网站，有哪些方法？</p>
+<ul>
+<li><strong>Solution 1</strong>: 对每个页面进行 "Computer Science" 字符串的扫描？ <strong><em>Wait till your next life!!!</em></strong></li>
+<li><strong>Solution 2</strong>: 使用 Term-Document Incidence Matrix</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/20240316143541.png" alt="20240316143541" style="zoom: 40%;" /></p>
+<p>会出现的问题：矩阵可能会变得非常稀疏（有很多 0）。</p>
+</div>
+<p>如何解决？使用倒排索引。</p>
+<div class="admonition info">
+<p class="admonition-title">定义</p>
+<p><strong>Index</strong> is a mechanism for locating a given term in a text. 简单来说就是一个存储位置的指针。</p>
+<p><strong>Inverted file</strong> contains a list of pointers (e.g. the number of a page) to all occurrences of that term in the text.</p>
+</div>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/20240316153126.png" alt="20240316153126" style="zoom:67%;" /></p>
+<div class="admonition info">
+<p class="admonition-title">为什么要记录出现次数 Frequency</p>
+<p>在做多关键词求交集结果的时候，我们常常选择从频率低的关键词入手，这样能够加快求解的速度。</p>
+</div>
+<p>问题变为如何生成这些 index。</p>
+<p><strong>Index Generator</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>while ( read a document D )
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>{
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    while ( read a term T in D ){
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        if ( Find ( Dictionary, T ) == false )
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            Insert( Dictionary, T );
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        Get T's posting list;
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        Insert a node to T's posting list;
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    }
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>}
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Write the inverted index to disk;
+</span></code></pre></div></p>
+<p>以上涉及很多部分，包括：</p>
+<p>Token Analyzer, Stop Filter, Vocabulary Scanner, Vocabulary Insertor, Memory management 等等。</p>
+<h2 id="2-2-modules">2. 2 Modules<a class="headerlink" href="#2-2-modules" title="Permanent link">&para;</a></h2>
+<h3 id="21-21-word-stemming-and-stop-filter">2.1 2.1 Word Stemming and Stop Filter<a class="headerlink" href="#21-21-word-stemming-and-stop-filter" title="Permanent link">&para;</a></h3>
+<p><strong>Word Stemming</strong>: 同样的词义，不同词性，只保留词根部分。</p>
+<p><strong>Stop Words</strong>: 某些太常见的词（a，is）等，不将其作为关键字。</p>
+<h3 id="22-22-accessing-the-terms">2.2 2.2 Accessing the Terms<a class="headerlink" href="#22-22-accessing-the-terms" title="Permanent link">&para;</a></h3>
+<p>如何访问关键字呢？</p>
+<p><strong>Solution 1</strong>: 搜索树（B-树，B+树等等）</p>
+<p><strong>Solution 2</strong>: Hashing</p>
+<p>哈希相对于搜索树的优缺点：</p>
+<ul>
+<li>优点是访问单个关键词会更快（<span class="arithmatex">\(O(1)\)</span>）</li>
+<li>缺点是访问连续的关键词序列通常做不到（range searches are expensive）</li>
+</ul>
+<h3 id="23-23-memory-management">2.3 2.3 Memory Management<a class="headerlink" href="#23-23-memory-management" title="Permanent link">&para;</a></h3>
+<p>没有足够的内存？memory-&gt;hard disk.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317102708817.png" alt="image-20240317102708817" style="zoom: 50%;" /></p>
+<h2 id="3-3-topics">3. 3 Topics<a class="headerlink" href="#3-3-topics" title="Permanent link">&para;</a></h2>
+<h3 id="31-31-distributed-indexing">3.1 3.1 Distributed Indexing<a class="headerlink" href="#31-31-distributed-indexing" title="Permanent link">&para;</a></h3>
+<p>Each node contains index of a subset of collection.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317103059613.png" alt="image-20240317103059613" style="zoom:50%;" /></p>
+<p>一般地我们采用上述两种方式的结合。</p>
+<h3 id="32-32-dynamic-indexing">3.2 3.2 Dynamic Indexing<a class="headerlink" href="#32-32-dynamic-indexing" title="Permanent link">&para;</a></h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317110445081.png" alt="image-20240317110445081" style="zoom:45%;" /></p>
+<p>如图所示，一般采用一个主索引以及一个附加索引，新文档加入先归到附加索引中，需要访问的时候在两个索引中一起搜索关键词。需要注意两个问题：何时进行归并（re-index），以及如何删除文档。</p>
+<h3 id="33-33-compression">3.3 3.3 Compression<a class="headerlink" href="#33-33-compression" title="Permanent link">&para;</a></h3>
+<p>存储许多数据，如何最大限度利用空间？</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317111027952.png" alt="image-20240317111027952" style="zoom:50%;" /></p>
+<p>首先左上角是对关键词的压缩。先移除 Stop words， 然后将词会和在一起。然后再开一个空间存储不同单词之间的隔断信息。</p>
+<p>右下角是对于 Posting List 的压缩，假设 computer 存在于第 2, 15, 47, ..., 58879, 58890 个文档中，我们记录每两个数字之间的差值，这样就能避免一些大数据的存储问题。</p>
+<h3 id="34-34-thresholding">3.4 3.4 Thresholding<a class="headerlink" href="#34-34-thresholding" title="Permanent link">&para;</a></h3>
+<p>给某些操作设定阈值。</p>
+<ul>
+<li><strong>Document</strong>: 对文档进行权重排序，只返回前 <span class="arithmatex">\(x\)</span> 个结果；</li>
+</ul>
+<p>缺点：对 Boolean 类型搜索（AND，OR等）不友好；可能由于截断而造成一些相关文档的缺失</p>
+<ul>
+<li><strong>Query</strong>: 按照词频增序排列关键词；仅根据部分关键词的比例（阈值）进行搜索</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317113447518.png" alt="image-20240317113447518" style="zoom:50%;" /></p>
+<p>Up to you.</p>
+<h2 id="4-4-measures">4. 4 Measures<a class="headerlink" href="#4-4-measures" title="Permanent link">&para;</a></h2>
+<h3 id="41-41-measure-the-search-engines">4.1 4.1 Measure the Search Engines<a class="headerlink" href="#41-41-measure-the-search-engines" title="Permanent link">&para;</a></h3>
+<p>如何衡量搜索引擎的好坏？</p>
+<ul>
+<li>
+<p>How fast does it index?</p>
+<ul>
+<li>Number of documents / hour</li>
+</ul>
+</li>
+<li>
+<p>How fast does it search?
+    -Latency as a function of index size</p>
+</li>
+<li>
+<p>Expressiveness of query language</p>
+<ul>
+<li>Ability to express complex information needs</li>
+<li>Speed on complex queries</li>
+</ul>
+</li>
+<li>
+<p><strong>User happiness?</strong></p>
+<ul>
+<li><strong>Data Retrieval Performance Evaluation (after establishing correctness)</strong>，侧重能搜索到的数据范围和速度<ul>
+<li>Response time</li>
+<li>Index space</li>
+</ul>
+</li>
+<li><strong>Information Retrieval Performance Evaluation</strong>，侧重相关性<ul>
+<li>How <em>relevant</em> is the answer set?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-42-measure-the-relevancy">4.2 4.2 Measure the Relevancy<a class="headerlink" href="#42-42-measure-the-relevancy" title="Permanent link">&para;</a></h3>
+<p>如何评估相关性？需要标准测试集以及评估标准。</p>
+<ol>
+<li>A benchmark <strong>document</strong> collection</li>
+<li>A benchmark suite of <strong>queries</strong></li>
+<li>A binary <strong>assessment</strong> of either <u>Relevant</u> or <u>Irrelevant</u> for each query-doc pair.</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317123621706.png" alt="image-20240317123621706" style="zoom: 55%;" /></p>
+<p>两个重要概念: <strong>Precision</strong> 和 <strong>Recall</strong>.</p>
+<ul>
+<li><strong>Precision</strong>: 搜到的相关文档占搜索到的文档的比例。</li>
+<li><strong>Recall</strong>: 搜到的相关文档占总的相关文档的比例。</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240317124136953.png" alt="image-20240317124136953" style="zoom:50%;" /></p>
 
 
 
@@ -3016,16 +3469,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.share", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.share", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
-        <script src="../../javascripts/article-cards.js"></script>
+        <script src="../../../javascripts/article-cards.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

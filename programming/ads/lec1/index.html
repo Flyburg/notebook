@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://note.flyburg.cc/link/friends/">
+        <link rel="canonical" href="https://note.flyburg.cc/programming/ads/lec1/">
       
       
-        <link rel="prev" href="../../tools/mkdocs/resource/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../join/">
+        <link rel="next" href="../lec2/">
       
       
         
@@ -27,14 +27,14 @@
     
     
       
-        <title>友链 - 羽城的笔记本</title>
+        <title>AVL/Splay/摊还分析 - 羽城的笔记本</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,15 +53,15 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../../stylesheets/document.css">
+      <link rel="stylesheet" href="../../../stylesheets/document.css">
     
-      <link rel="stylesheet" href="../../stylesheets/friends.css">
+      <link rel="stylesheet" href="../../../stylesheets/friends.css">
     
-      <link rel="stylesheet" href="../../stylesheets/file.css">
+      <link rel="stylesheet" href="../../../stylesheets/file.css">
     
-      <link rel="stylesheet" href="../../stylesheets/article-cards.css">
+      <link rel="stylesheet" href="../../../stylesheets/article-cards.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css">
     
@@ -69,7 +69,7 @@
     
       <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#朋友们" class="md-skip">
+        <a href="#lecture-1-avl-trees-splay-trees-and-amortized-analysis" class="md-skip">
           跳转至
         </a>
       
@@ -108,7 +108,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="羽城的笔记本" class="md-header__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
+    <a href="../../.." title="羽城的笔记本" class="md-header__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"/></svg>
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              友链
+              AVL/Splay/摊还分析
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -273,11 +273,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../programming/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -299,7 +301,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../system/" class="md-tabs__link">
+        <a href="../../../system/" class="md-tabs__link">
           
   
   
@@ -321,7 +323,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../application/" class="md-tabs__link">
+        <a href="../../../application/" class="md-tabs__link">
           
   
   
@@ -343,7 +345,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ai/" class="md-tabs__link">
+        <a href="../../../ai/" class="md-tabs__link">
           
   
   
@@ -365,7 +367,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../thesis/" class="md-tabs__link">
+        <a href="../../../thesis/" class="md-tabs__link">
           
   
   
@@ -387,7 +389,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tools/" class="md-tabs__link">
+        <a href="../../../tools/" class="md-tabs__link">
           
   
   
@@ -405,13 +407,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../link/friends/" class="md-tabs__link">
           
   
   
@@ -433,7 +433,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../about/" class="md-tabs__link">
+        <a href="../../../about/" class="md-tabs__link">
           
   
   
@@ -469,7 +469,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="羽城的笔记本" class="md-nav__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
+    <a href="../../.." title="羽城的笔记本" class="md-nav__button md-logo" aria-label="羽城的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm4 4H5v2h2zm0-4V5H5v2zm0 12v-2H5v2z"/></svg>
@@ -499,7 +499,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -523,6 +523,8 @@
       
   
   
+    
+  
   
   
     
@@ -542,18 +544,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../programming/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -571,13 +576,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -597,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fpa/" class="md-nav__link">
+      <a href="../../fpa/" class="md-nav__link">
         
   
   
@@ -658,7 +663,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../programming/fds/" class="md-nav__link ">
+            <a href="../../fds/" class="md-nav__link ">
               
   
   
@@ -702,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch1/" class="md-nav__link">
+      <a href="../../fds/ch1/" class="md-nav__link">
         
   
   
@@ -730,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch2/" class="md-nav__link">
+      <a href="../../fds/ch2/" class="md-nav__link">
         
   
   
@@ -758,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch3/" class="md-nav__link">
+      <a href="../../fds/ch3/" class="md-nav__link">
         
   
   
@@ -786,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch4/" class="md-nav__link">
+      <a href="../../fds/ch4/" class="md-nav__link">
         
   
   
@@ -814,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch5/" class="md-nav__link">
+      <a href="../../fds/ch5/" class="md-nav__link">
         
   
   
@@ -842,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/fds/ch6/" class="md-nav__link">
+      <a href="../../fds/ch6/" class="md-nav__link">
         
   
   
@@ -875,6 +880,8 @@
                 
   
   
+    
+  
   
   
     
@@ -917,15 +924,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../programming/ads/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -949,7 +956,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -966,10 +973,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../programming/ads/lec1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVL/Splay/摊还分析
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -985,6 +1019,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-1-avl-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 1 AVL Trees
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 1 AVL Trees">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-11-single-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 1.1 Single Rotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-12-double-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 1.2 Double Rotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-13-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 1.3 Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-2-splay-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 2 Splay Trees
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-3-amortized-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 3 Amortized Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 3 Amortized Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-31-aggregate-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 3.1 Aggregate Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-32-accounting-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 3.2 Accounting Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-33-potential-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 3.3 Potential Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -997,7 +1162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec2/" class="md-nav__link">
+      <a href="../lec2/" class="md-nav__link">
         
   
   
@@ -1025,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec3/" class="md-nav__link">
+      <a href="../lec3/" class="md-nav__link">
         
   
   
@@ -1053,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec4/" class="md-nav__link">
+      <a href="../lec4/" class="md-nav__link">
         
   
   
@@ -1081,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec5/" class="md-nav__link">
+      <a href="../lec5/" class="md-nav__link">
         
   
   
@@ -1109,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec6/" class="md-nav__link">
+      <a href="../lec6/" class="md-nav__link">
         
   
   
@@ -1137,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec7/" class="md-nav__link">
+      <a href="../lec7/" class="md-nav__link">
         
   
   
@@ -1165,7 +1330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec8/" class="md-nav__link">
+      <a href="../lec8/" class="md-nav__link">
         
   
   
@@ -1193,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec9/" class="md-nav__link">
+      <a href="../lec9/" class="md-nav__link">
         
   
   
@@ -1221,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec10/" class="md-nav__link">
+      <a href="../lec10/" class="md-nav__link">
         
   
   
@@ -1249,7 +1414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec11/" class="md-nav__link">
+      <a href="../lec11/" class="md-nav__link">
         
   
   
@@ -1277,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec12/" class="md-nav__link">
+      <a href="../lec12/" class="md-nav__link">
         
   
   
@@ -1305,7 +1470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../programming/ads/lec13/" class="md-nav__link">
+      <a href="../lec13/" class="md-nav__link">
         
   
   
@@ -1371,7 +1536,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../system/" class="md-nav__link ">
+            <a href="../../../system/" class="md-nav__link ">
               
   
   
@@ -1436,7 +1601,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../system/arch/" class="md-nav__link ">
+            <a href="../../../system/arch/" class="md-nav__link ">
               
   
   
@@ -1515,7 +1680,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../application/" class="md-nav__link ">
+            <a href="../../../application/" class="md-nav__link ">
               
   
   
@@ -1600,7 +1765,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../application/comp/" class="md-nav__link ">
+            <a href="../../../application/comp/" class="md-nav__link ">
               
   
   
@@ -1644,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch2/" class="md-nav__link">
+      <a href="../../../application/comp/ch2/" class="md-nav__link">
         
   
   
@@ -1672,7 +1837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch3/" class="md-nav__link">
+      <a href="../../../application/comp/ch3/" class="md-nav__link">
         
   
   
@@ -1700,7 +1865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch4/" class="md-nav__link">
+      <a href="../../../application/comp/ch4/" class="md-nav__link">
         
   
   
@@ -1728,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch5/" class="md-nav__link">
+      <a href="../../../application/comp/ch5/" class="md-nav__link">
         
   
   
@@ -1756,7 +1921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch6/" class="md-nav__link">
+      <a href="../../../application/comp/ch6/" class="md-nav__link">
         
   
   
@@ -1784,7 +1949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch7/" class="md-nav__link">
+      <a href="../../../application/comp/ch7/" class="md-nav__link">
         
   
   
@@ -1812,7 +1977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch8/" class="md-nav__link">
+      <a href="../../../application/comp/ch8/" class="md-nav__link">
         
   
   
@@ -1840,7 +2005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch9/" class="md-nav__link">
+      <a href="../../../application/comp/ch9/" class="md-nav__link">
         
   
   
@@ -1868,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch10/" class="md-nav__link">
+      <a href="../../../application/comp/ch10/" class="md-nav__link">
         
   
   
@@ -1896,7 +2061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/comp/ch11/" class="md-nav__link">
+      <a href="../../../application/comp/ch11/" class="md-nav__link">
         
   
   
@@ -1957,7 +2122,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../application/cs186/" class="md-nav__link ">
+            <a href="../../../application/cs186/" class="md-nav__link ">
               
   
   
@@ -2001,7 +2166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/cs186/lec1/" class="md-nav__link">
+      <a href="../../../application/cs186/lec1/" class="md-nav__link">
         
   
   
@@ -2029,7 +2194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../application/cs186/lec2/" class="md-nav__link">
+      <a href="../../../application/cs186/lec2/" class="md-nav__link">
         
   
   
@@ -2095,7 +2260,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ai/" class="md-nav__link ">
+            <a href="../../../ai/" class="md-nav__link ">
               
   
   
@@ -2160,7 +2325,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ai/ai_intro/" class="md-nav__link ">
+            <a href="../../../ai/ai_intro/" class="md-nav__link ">
               
   
   
@@ -2235,7 +2400,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../thesis/" class="md-nav__link ">
+            <a href="../../../thesis/" class="md-nav__link ">
               
   
   
@@ -2304,7 +2469,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tools/" class="md-nav__link ">
+            <a href="../../../tools/" class="md-nav__link ">
               
   
   
@@ -2379,7 +2544,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tools/mkdocs/" class="md-nav__link ">
+            <a href="../../../tools/mkdocs/" class="md-nav__link ">
               
   
   
@@ -2423,7 +2588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/ready/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/ready/" class="md-nav__link">
         
   
   
@@ -2451,7 +2616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/build/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/build/" class="md-nav__link">
         
   
   
@@ -2479,7 +2644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/deploy/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/deploy/" class="md-nav__link">
         
   
   
@@ -2507,7 +2672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/advanced/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/advanced/" class="md-nav__link">
         
   
   
@@ -2535,7 +2700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/mkdocs/resource/" class="md-nav__link">
+      <a href="../../../tools/mkdocs/resource/" class="md-nav__link">
         
   
   
@@ -2575,10 +2740,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -2590,20 +2753,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -2621,7 +2781,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2636,19 +2796,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../link/friends/" class="md-nav__link">
         
   
   
@@ -2664,7 +2815,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2677,7 +2827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../join/" class="md-nav__link">
+      <a href="../../../link/join/" class="md-nav__link">
         
   
   
@@ -2733,7 +2883,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../about/" class="md-nav__link ">
+            <a href="../../../about/" class="md-nav__link ">
               
   
   
@@ -2792,6 +2942,125 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-1-avl-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 1 AVL Trees
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 1 AVL Trees">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-11-single-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 1.1 Single Rotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-12-double-rotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 1.2 Double Rotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-13-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 1.3 Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-2-splay-trees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 2 Splay Trees
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-3-amortized-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 3 Amortized Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 3 Amortized Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-31-aggregate-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 3.1 Aggregate Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-32-accounting-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 3.2 Accounting Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-33-potential-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 3.3 Potential Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2807,7 +3076,7 @@
 
 
   
-    <a href="https://github.com/Flyburg/notebook/edit/main/docs/link/friends.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Flyburg/notebook/edit/main/docs/programming/ads/lec1.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2815,55 +3084,148 @@
   
 
 
-<h1 id="朋友们">朋友们<a class="headerlink" href="#朋友们" title="Permanent link">&para;</a></h1>
-<div class="friends-container">
-  <div class="friend-card" style="--base-color: var(--color-blue);">
-    <img src="https://bee-reg-ab.imagency.cn/mr/6175/26/58ed5b59c6ed9ff04506d982b0dd582c.jpg" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">羽城のBlog</div>
-      <p class="friend-description">Alea jacta est!</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://flyburg.cc/'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-red);">
-    <img src="https://avatars.githubusercontent.com/u/147455218?v=4" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">皮大嘎</div>
-      <p class="friend-description">参与网站后期白嫖工作。</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://github.com/Argonding'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-purple);">
-    <img src="https://griseo.nimo.page/img/head.jpg" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">永恒闪电</div>
-      <p class="friend-description">他的...个人简历？</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://griseo.nimo.page/about.html'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-blue);">
-    <img src="https://s2.loli.net/2024/02/01/gaE47y5fKM6kosV.png" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">Wcowin's Blog</div>
-      <p class="friend-description">循此苦旅，以达星辰</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://wcowin.work/'"></div>
-  </div>
-
-  <div class="friend-card" style="--base-color: var(--color-purple);">
-    <img src="https://avatars.githubusercontent.com/u/139060797?s=400&u=f60d19e28c620478e42bb68c705f47bbdfb71d96&v=4" alt="avatar" class="friend-avatar">
-    <div class="friend-info">
-      <div class="friend-name">月全食的小本本</div>
-      <p class="friend-description">丢掉幻想 准备斗争</p>
-    </div>
-    <div class="friend-link" onclick="window.location.href='https://eclipseyue.github.io/'"></div>
-  </div>
+<h1 id="lecture-1-avl-trees-splay-trees-and-amortized-analysis">Lecture 1: AVL Trees, Splay Trees, and Amortized Analysis<a class="headerlink" href="#lecture-1-avl-trees-splay-trees-and-amortized-analysis" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"/></svg></span> 约 1857 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"/></svg></span> 10 张图片 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"/></svg></span> 预计阅读时间 6 分钟</p>
 </div>
-
-<!-- 添加更多友链 -->
+<p>AVL 树、伸展树和摊还分析。</p>
+<h2 id="1-1-avl-trees">1. 1 AVL Trees<a class="headerlink" href="#1-1-avl-trees" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Target</strong>: Speed up searching(with insertion and deletion). 加快二叉树搜索速度。</li>
+<li><strong>Tool</strong>: Binary Search Trees</li>
+<li><strong>Problem</strong>: The height of the tree can be as bad as <span class="arithmatex">\(O(N)\)</span>.</li>
+</ul>
+<p>一般的二叉搜索树存在问题：树的高度与输入序列有关。例如当我们输入递增/递减序列来构建二叉搜索树的话，树的高度就变成了 <span class="arithmatex">\(N\)</span>。而由于动态问题中不能确定下一个输入的值是多少，因此要重新排列输入序列来获得平衡树是不可能的。</p>
+<p>因此解决问题的角度变为<strong>时刻盯紧这棵树</strong>，一有新元素加入就重新拾掇使之平衡。这也是 AVL 树（<strong>A</strong>delson-<strong>V</strong>elskii-<strong>L</strong>andis Trees, 1962）的思想。</p>
+<div class="admonition info">
+<p class="admonition-title">定义：<strong>Height Balanced</strong>(高度平衡)</p>
+<p>An empty binary tree is height balanced. If <span class="arithmatex">\(T\)</span> is a nonempty binary tree with <span class="arithmatex">\(T_{L}\)</span> and <span class="arithmatex">\(T_{R}\)</span> as its left and right subtrees, then <span class="arithmatex">\(T\)</span> is height balanced iff:</p>
+<ol>
+<li><span class="arithmatex">\(T_{L}\)</span> and <span class="arithmatex">\(T_{R}\)</span> are height balanced, and</li>
+<li><span class="arithmatex">\(|h_{L}-h_{R}|\leq 1\)</span> where <span class="arithmatex">\(h_{L}\)</span> and <span class="arithmatex">\(h_{R}\)</span> are the heights of  <span class="arithmatex">\(T_{L}\)</span> and <span class="arithmatex">\(T_{R}\)</span>, respectively.</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>空树的高度定义为 -1。</p>
+</div>
+<p>AVL 树的一种实现方法就是<strong>时刻关注 BF 值</strong>，对树进行调整使之平衡。</p>
+<div class="admonition info">
+<p class="admonition-title">定义：<strong>Balance Factor</strong>(平衡因数)</p>
+<p><span class="arithmatex">\(BF(\mathrm{node})=h_{L}-h_{R}\)</span>. In an AVL tree, <span class="arithmatex">\(BF(\mathrm{node})=-1, 0, \mathrm{or}\  1.\)</span></p>
+</div>
+<p><strong>在加入新的结点的时候，BF 值自下而上更新</strong>。</p>
+<p>接下来介绍 AVL 树进行调整的几种情况：</p>
+<h3 id="11-11-single-rotation">1.1 1.1 Single Rotation<a class="headerlink" href="#11-11-single-rotation" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20240302131432696" src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240302131432696.png" /></p>
+<p>情况如上。</p>
+<p>加入 Nov 结点之后，更新 BF 值，发现 Mar 的 BF 值已经不满足 AVL 树的条件了。此时进行<strong>单旋</strong>（Single Rotation），将 Mar 旋转下来作为 May 的左子树。因为这个问题的 "Trouble Maker" 是 "Trouble Finder" 的<u>右子树的右子树</u>，所以这种操作又称为 <strong>RR Rotation</strong>。</p>
+<p>同理，也有 <strong>LL Rotation</strong>，不再赘述。</p>
+<p>一般化此情况，即为：</p>
+<p><img alt="image-20240302132044944" src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240302132044944.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">提示</p>
+<p>这里的 <span class="arithmatex">\(A\)</span> <strong>可以不是树根</strong>。</p>
+</div>
+<h3 id="12-12-double-rotation">1.2 1.2 Double Rotation<a class="headerlink" href="#12-12-double-rotation" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20240302133117809" src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240302133117809.png" /></p>
+<p>情况如上。</p>
+<p>加入 Jan 结点后，May 的 BF 值不满足条件，此时将 Mar 拎上去作为树根，原来的 May 就作为它的右儿子即可。这种情况下的 "Trouble Maker" 是  "Trouble Finder" <u>左子树的右子树</u>，所以这种操作称为 <strong>LR Rotation</strong>。同时，这种操作可以看作是两个单旋的组合，称为双旋（Double Rotation）。</p>
+<p>同理，也有 <strong>RL Rotation</strong>，不再赘述。</p>
+<p>一般化此情况，即为：</p>
+<p><img alt="image-20240302133614463" src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240302133614463.png" /></p>
+<p><img alt="image-20240302133828777" src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240302133828777.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">提示</p>
+<p>这里的 <span class="arithmatex">\(A\)</span> 同样<strong>可以不是树根</strong>。</p>
+</div>
+<h3 id="13-13-analysis">1.3 1.3 Analysis<a class="headerlink" href="#13-13-analysis" title="Permanent link">&para;</a></h3>
+<p>二叉搜索树的操作时间复杂度为 <span class="arithmatex">\(O(\mathrm{height})\)</span>。这里需要找到这个 height。推导过程如下：</p>
+<div class="admonition note">
+<p class="admonition-title">推导过程</p>
+<p>记 <span class="arithmatex">\(n_{h}\)</span> 为高度为 <span class="arithmatex">\(h\)</span> 的平衡二叉树包含最少的结点数。则树的形状必定为：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240303153241059.png" alt="image-20240303153241059" style="zoom: 33%;" /></p>
+<p>因此推导出 <span class="arithmatex">\(n_{h}=n_{h-1}+n_{h-2}+1\)</span>。联想到斐波那契数满足 <span class="arithmatex">\(F_{0}=0, F_{1}=1, F_{i}=F_{i-1}+F_{i-2} ,\ \mathrm{for} \  i&gt;1\)</span>，可以证明出 <span class="arithmatex">\(n_{h}=F_{h+2}-1, \ \mathrm{for}\ h\ge0\)</span>.</p>
+<p>由于斐波那契数定理给出了 <span class="arithmatex">\(F_{i}\approx \frac{1}{\sqrt{5}}(\frac{1+\sqrt{5}}{2})^{i}\)</span>，因此可以得到<span class="arithmatex">\(n_{h}\approx \frac{1}{\sqrt{5}}(\frac{1+\sqrt{5}}{2})^{h+2}-1\)</span>，也就是 <span class="arithmatex">\(h\approx O(\mathrm{ln}\ n)\)</span>.</p>
+</div>
+<h2 id="2-2-splay-trees">2. 2 Splay Trees<a class="headerlink" href="#2-2-splay-trees" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Target</strong>: Any <span class="arithmatex">\(M\)</span> consecutive tree operations starting from an empty tree take at most <span class="arithmatex">\(O(MlogN)\)</span> time. That means the <strong><em>amortized</em></strong> time(摊还时间) is <span class="arithmatex">\(O(logN)\)</span>.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">提示</p>
+<p>AVL 树就是一种伸展树。 </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>摊还时间为 <span class="arithmatex">\(O(logN)\)</span>，意味着相较于 AVL 树（任何操作时间都为 <span class="arithmatex">\(O(logN)\)</span>），时间上界要求变低了，变成了 <span class="arithmatex">\(O(N)\)</span>。但虽然如此，<strong>平均效果是差不多的</strong>。即使单个操作可能坏到 <span class="arithmatex">\(O(N)\)</span>，总用时还是会以 <span class="arithmatex">\(O(MlogN)\)</span> 的形式出现。</p>
+</div>
+<p>注意到如果以同样的线性时间方式访问某个节点 <span class="arithmatex">\(M\)</span> 次，总用时就有可能变成 <span class="arithmatex">\(O(MN)\)</span>，这是我们不想看到的结果。因此采用方法：<strong>Whenever a node is accessed, it must be moved.</strong></p>
+<ul>
+<li><strong>Idea</strong>: After a node is accessed, it is <strong>pushed to the root</strong> by a series of AVL tree rotations.</li>
+</ul>
+<p>旋转方法如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240303134048825.png" alt="image-20240303134048825" style="zoom:67%;" /></p>
+<p>对于删除，分以下步骤进行：</p>
+<ol>
+<li><strong>Find X</strong>, and X will be at the root;</li>
+<li><strong>Remove X</strong>, and there will be 2 subtrees <span class="arithmatex">\(T_{L}\)</span> and <span class="arithmatex">\(T_{R}\)</span>;</li>
+<li><strong>FindMax(<span class="arithmatex">\(T_{L}\)</span>)</strong>, the largest element will be the root of <span class="arithmatex">\(T_{L}\)</span>, and <em>has no right child</em>;</li>
+<li><strong>Make <span class="arithmatex">\(T_{R}\)</span> the right child of the root of <span class="arithmatex">\(T_{L}\)</span></strong>.</li>
+</ol>
+<p>Splay 树实现起来比 AVL 树要简单。</p>
+<h2 id="3-3-amortized-analysis">3. 3 Amortized Analysis<a class="headerlink" href="#3-3-amortized-analysis" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Target</strong>: Any <span class="arithmatex">\(M\)</span> consecutive operations take at most <span class="arithmatex">\(O(MlogN)\)</span> time. 平均下来每个操作花费时间为 <span class="arithmatex">\(O(logN)\)</span>，这称为<strong>摊还时间上界</strong>（<strong>amortized time bound</strong>）。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">三种时间的比较</p>
+<p><strong><em>worst-case bound &gt;= amortized bound &gt;= average-case bound</em></strong></p>
+<p><strong>Amortized bound does not involve probability.</strong> 分析平均情况时也许会假设不同样例之间的概率大小，但是摊还上界都是所有情况的真实平均值。</p>
+</div>
+<p>做摊还分析有三种方法：总量分析、会计法和势能法。</p>
+<h3 id="31-31-aggregate-analysis">3.1 3.1 Aggregate Analysis<a class="headerlink" href="#31-31-aggregate-analysis" title="Permanent link">&para;</a></h3>
+<p>总量分析。</p>
+<ul>
+<li><strong>Idea</strong>: Show that for all <span class="arithmatex">\(n\)</span>, a sequence of <span class="arithmatex">\(n\)</span> operations takes <em>worst-case</em> time <span class="arithmatex">\(T(n)\)</span> in total. In the worst case, the average cost, or <strong><em>amortized cost</em></strong>, per operation is therefore <span class="arithmatex">\(T(n)/n\)</span>. 试图证明对所有的 <span class="arithmatex">\(n\)</span>，考虑一系列的 <span class="arithmatex">\(n\)</span> 个操作，无论这些操作是什么，得到一个最坏情况下的总时间 <span class="arithmatex">\(T(n)\)</span>（总量），进而除以 <span class="arithmatex">\(n\)</span> 得到摊还开销。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">举个栗子</p>
+<p>定义堆栈<strong>从空栈开始</strong>的三种操作：<code>push</code>，<code>pop</code> 和 <code>multipop</code>，其中 <code>multipop</code> 是一次弹出 k 个元素。现在对这些操作的时间进行摊还分析。</p>
+<p><code>push</code> 和 <code>pop</code> 一次的时间都是 <span class="arithmatex">\(O(1)\)</span>，而 <code>multipop</code> 一次的时间取决于 k，最大能够到 <span class="arithmatex">\(O(n)\)</span>。</p>
+<p>我们进行 <span class="arithmatex">\(n\)</span> 次操作，假设每次都是 <code>multipop</code>，而且每次 <code>multipop</code> 的时间复杂度都取 <span class="arithmatex">\(O(n)\)</span>，看上去总的时间是 <span class="arithmatex">\(O(n^2)\)</span>。<strong>但是</strong>，由于这里是从空栈开始，一个元素压一次不可能弹出来两次，所以上述情况不会发生。</p>
+<p>我们可以用 <span class="arithmatex">\(n-1\)</span> 次的 <code>push</code> 配合上 <span class="arithmatex">\(1\)</span> 次的 <code>multipop</code>，一次弹出 <span class="arithmatex">\(n-1\)</span> 个元素，那么总时间就是 <span class="arithmatex">\(2n-2\)</span>，进而得到摊还时间就是 <span class="arithmatex">\(O(1)\)</span>。</p>
+</div>
+<h3 id="32-32-accounting-method">3.2 3.2 Accounting Method<a class="headerlink" href="#32-32-accounting-method" title="Permanent link">&para;</a></h3>
+<p>会计法。</p>
+<ul>
+<li><strong>Idea</strong>: When an operation’s <em>amortized cost</em> <span class="arithmatex">\(\hat{c}_{i}\)</span> exceeds its <em>actual cost</em> <span class="arithmatex">\(c_{i}\)</span> , we assign the difference to specific objects in the data structure as <strong><em>credit</em></strong>. Credit can help <em>pay</em> for later operations whose amortized cost is less than their actual cost.</li>
+</ul>
+<p>对于所有的 <span class="arithmatex">\(n\)</span> 次操作，必须保证 <span class="arithmatex">\(\sum\limits_{i=1}^{n}\hat{c}_i\ge\sum\limits_{i=1}^{n}c_i\)</span>。</p>
+<div class="admonition note">
+<p class="admonition-title">举个栗子</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240303150731349.png" alt="image-20240303150731349" style="zoom:50%;" /></p>
+</div>
+<p>会计法和总量分析的不同：对于会计法，不同操作的摊还开销可能是不同的（给不同的操作分配不同的 credits）。</p>
+<p>对于复杂的问题，想要定下来一个 credits 还是很难的。</p>
+<h3 id="33-33-potential-method">3.3 3.3 Potential Method<a class="headerlink" href="#33-33-potential-method" title="Permanent link">&para;</a></h3>
+<p>势能法。</p>
+<ul>
+<li><strong>Idea</strong>: <span class="arithmatex">\(\hat{c}_i-c_i=Credit_i=\Phi(D_i)-\Phi(D_{i-1})\)</span>, where <span class="arithmatex">\(\Phi(x)\)</span> is called the <strong>Potential function</strong>. Sum them up and we get <span class="arithmatex">\(\sum\limits_{i=1}^n\hat{c}_i=(\sum\limits_{i=1}^nc_i)+\Phi(D_n)-\Phi(D_0)\)</span>.</li>
+</ul>
+<p>如果能保证 <span class="arithmatex">\(\Phi(D_n)-\Phi(D_0) \ge 0\)</span>，就能确保摊还总开销是实际开销的上界。</p>
+<p>问题转变为选取一个好的势能函数。</p>
+<blockquote>
+<p><strong>In general, a good potential function should always assume its minimum at the start of the sequence.</strong></p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">举个栗子</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240303151924010.png" alt="image-20240303151924010" style="zoom:50%;" /></p>
+</div>
+<p>用势能法分析 Splay 树：</p>
+<p>这里的势能函数取 <span class="arithmatex">\(\Phi(D_{i})=\sum\limits_{i=1}^nlogS(i)\)</span>，其中 <span class="arithmatex">\(S(i)\)</span> 是 <span class="arithmatex">\(i\)</span> 结点的子孙数量。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Frankoxer/image-host/pic/image-20240303152729146.png" alt="image-20240303152729146" style="zoom:67%;" /></p>
+<p>如果操作从空树开始，摊还分析中能够让 <span class="arithmatex">\(M\)</span> 较大。如果非空树开始，需要有 <span class="arithmatex">\(M\)</span> 充分大的假设，这样才能保证摊还时间上界为 <span class="arithmatex">\(O(MlogN)\)</span>。</p>
 
 
 
@@ -3016,16 +3378,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.share", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.top", "navigation.indexes", "search.share", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
-        <script src="../../javascripts/article-cards.js"></script>
+        <script src="../../../javascripts/article-cards.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
