@@ -13,7 +13,7 @@ nostatistics: true
     <img src="https://bee-reg-ab.imagency.cn/mr/6175/26/58ed5b59c6ed9ff04506d982b0dd582c.jpg" alt="avatar" class="friend-avatar">
     <div class="friend-info">
       <div class="friend-name">羽城のBlog</div>
-      <p class="friend-description">正解は無いんだ</p>
+      <p class="friend-description">Alea jacta est!</p>
     </div>
     <div class="friend-link" onclick="window.location.href='https://flyburg.cc/'"></div>
   </div>

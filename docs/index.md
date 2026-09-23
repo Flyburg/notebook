@@ -47,31 +47,25 @@ const cards = [
     meta: "实践教程 · 前端开发",
     title: "MkDocs 笔记本设计",
     abb: "MkDocs",
-    link: "/self/mkdocs"
+    link: "/tools/mkdocs"
   },
   {
     meta: "复习笔记 · 硬件设计",
     title: "计算机体系结构",
     abb: "Arch",
-    link: "/course/arch"
+    link: "/system/arch"
   },
   {
     meta: "学习笔记 · 数据结构",
     title: "高级数据结构与算法分析",
     abb: "ADS",
-    link: "/course/ads"
+    link: "/programming/ads"
   },
   {
     meta: "学习笔记 · 编译原理",
     title: "编译原理",
     abb: "Compile",
-    link: "/course/comp"
-  },
-  {
-    meta: "学习笔记 · 前端设计",
-    title: "HTML 基础",
-    abb: "HTML",
-    link: "/self/html"
+    link: "/application/comp"
   }
   // 可以继续添加更多卡片...
 ];

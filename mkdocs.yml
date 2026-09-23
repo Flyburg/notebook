@@ -1,17 +1,17 @@
 # [Info]
 site_name: 羽城的笔记本
 site_url: https://note.flyburg.cc/
-site_description: 羽城的笔记本
+site_description: Flyburg's Notebook
 
 # [UI]
 ## [top]
 theme:
   name: material
   custom_dir: overrides
-  favicon: https://s2.loli.net/2025/01/27/oFMcIOLbZstxUjH.png
+  favicon: https://bee-reg-ab.imagency.cn/mr/6175/26/e6d14d2067b418f35d3ee368841390c2.png
   font:
     text: LXGW WenKai Screen
-    code: Monaco
+    code: JetBrains Mono
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -48,7 +48,7 @@ theme:
     - content.action.edit # 点击按钮跳转到编辑页面  需要结合 edit_uri 一起使用
   language: zh # 一些提示性的文字会变成中文
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
     logo: material/notebook
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 
@@ -57,7 +57,7 @@ repo_url: https://github.com/Flyburg/notebook # 右上角的GitHub链接
 repo_name: Flyburg's Notebook # 鼠标悬浮提示
 
 ## [bottom-left corner]
-copyright: Copyright &copy; 2023 - 2026 羽城
+copyright: Copyright &copy; 2023 - 2026 Flyburg
 
 ## [bottom-right corner]
 extra:
@@ -90,11 +90,11 @@ plugins:
       strict_mode: False
       order: 2
       excludes: 
-        - course/ads/
-        - course/fds/
-        - course/ai/
-        - course/arch/
-        - self/html/
+        - application/ads/
+        - application/fds/
+        - application/ai/
+        - application/arch/
+        - application/html/
 
 markdown_extensions:
   # - abbr
@@ -166,71 +166,69 @@ extra_css:
 #[Navigation]
 nav: 
   - 主页: index.md
-  - 学校课程:
-    - course/index.md
-    - 程序设计与算法基础: course/fpa/final-exam-re.md
+  - 编程与算法:
+    - programming/index.md
+    - 程序设计与算法基础: programming/fpa/index.md
     - 数据结构基础: 
-      - course/fds/index.md
-      - 算法分析基础: course/fds/ch1.md
-      - 线性数据结构: course/fds/ch2.md
-      - 树: course/fds/ch3.md
-      - 图: course/fds/ch4.md
-      - 排序: course/fds/ch5.md
-      - 散列: course/fds/ch6.md
-    - 人工智能引论: 
-      - course/ai/index.md
+      - programming/fds/index.md
+      - 算法分析基础: programming/fds/ch1.md
+      - 线性数据结构: programming/fds/ch2.md
+      - 树: programming/fds/ch3.md
+      - 图: programming/fds/ch4.md
+      - 排序: programming/fds/ch5.md
+      - 散列: programming/fds/ch6.md
     - 高级数据结构与算法分析:
-      - course/ads/index.md
-      - AVL/Splay/摊还分析: course/ads/lec1.md
-      - 红黑树/B+ 树: course/ads/lec2.md
-      - 倒排索引: course/ads/lec3.md
-      - 左式堆与斜堆: course/ads/lec4.md
-      - 二项堆: course/ads/lec5.md
-      - 回溯: course/ads/lec6.md
-      - 分治法: course/ads/lec7.md
-      - 动态规划: course/ads/lec8.md
-      - 贪心算法: course/ads/lec9.md
-      - NP: course/ads/lec10.md
-      - 近似算法: course/ads/lec11.md
-      - 局部搜索: course/ads/lec12.md
-      - 随机算法: course/ads/lec13.md
+      - programming/ads/index.md
+      - AVL/Splay/摊还分析: programming/ads/lec1.md
+      - 红黑树/B+ 树: programming/ads/lec2.md
+      - 倒排索引: programming/ads/lec3.md
+      - 左式堆与斜堆: programming/ads/lec4.md
+      - 二项堆: programming/ads/lec5.md
+      - 回溯: programming/ads/lec6.md
+      - 分治法: programming/ads/lec7.md
+      - 动态规划: programming/ads/lec8.md
+      - 贪心算法: programming/ads/lec9.md
+      - NP: programming/ads/lec10.md
+      - 近似算法: programming/ads/lec11.md
+      - 局部搜索: programming/ads/lec12.md
+      - 随机算法: programming/ads/lec13.md
+  - 计算机系统:
+    - system/index.md
     - 计算机体系结构:
-      - course/arch/index.md
+      - system/arch/index.md
+  - 应用程序:
+    - application/index.md
     - 编译原理:
-      - course/comp/index.md
-      - 词法分析: course/comp/ch2.md
-      - 语法分析: course/comp/ch3.md
-      - 抽象语法: course/comp/ch4.md
-      - 语义分析: course/comp/ch5.md
-      - 活动记录: course/comp/ch6.md
-      - 中间代码: course/comp/ch7.md
-      - 基本块划分: course/comp/ch8.md
-      - 指令选择: course/comp/ch9.md
-      - 活跃分析: course/comp/ch10.md
-      - 寄存器分配: course/comp/ch11.md
-  - 自学笔记:
-    - self/index.md
-    - HTML 学习:
-      - self/html/index.md
-      - HTML 简介: self/html/lec1.md
-      - 段落与基本格式: self/html/lec2.md
-      - 其他格式: self/html/lec3.md
-      - 其他元素: self/html/lec4.md
-    - CSS 学习:
-      - self/css/index.md
-      - CSS 简介: self/css/lec1.md
-      - 背景样式: self/css/lec2.md
-    - Mkdocs 网页:
-      - self/mkdocs/index.md
-      - 简介与准备工作: self/mkdocs/ready.md
-      - 本地构建网站: self/mkdocs/build.md
-      - 部署到 gh-pages: self/mkdocs/deploy.md
-      - 高级配置: self/mkdocs/advanced.md
-      - 相关资源: self/mkdocs/resource.md
+      - application/comp/index.md
+      - 词法分析: application/comp/ch2.md
+      - 语法分析: application/comp/ch3.md
+      - 抽象语法: application/comp/ch4.md
+      - 语义分析: application/comp/ch5.md
+      - 活动记录: application/comp/ch6.md
+      - 中间代码: application/comp/ch7.md
+      - 基本块划分: application/comp/ch8.md
+      - 指令选择: application/comp/ch9.md
+      - 活跃分析: application/comp/ch10.md
+      - 寄存器分配: application/comp/ch11.md
     - CS186 数据库系统导论:
-      - self/cs186/index.md
-      - 简介: self/cs186/lec1.md
-      - SQL Ⅰ: self/cs186/lec2.md
+      - application/cs186/index.md
+      - 简介: application/cs186/lec1.md
+      - SQL Ⅰ: application/cs186/lec2.md
+  - 人工智能:
+    - ai/index.md
+    - 人工智能引论: 
+      - ai/ai_intro/index.md
+  - 论文阅读:
+    - thesis/index.md
+  - 实用工具:
+    - tools/index.md
+    - Mkdocs 网页:
+      - tools/mkdocs/index.md
+      - 简介与准备工作: tools/mkdocs/ready.md
+      - 本地构建网站: tools/mkdocs/build.md
+      - 部署到 gh-pages: tools/mkdocs/deploy.md
+      - 高级配置: tools/mkdocs/advanced.md
+      - 相关资源: tools/mkdocs/resource.md
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md
