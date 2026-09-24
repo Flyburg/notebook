@@ -5,8 +5,6 @@ nostatistics: true
 
 # 计算机体系结构
 
-## 课程信息
-
 - **课程名称**：计算机体系结构（Computer **Arch**itecture）
 - **学期**：2024-2025 秋冬
 - **教师**：姜晓红

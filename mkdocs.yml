@@ -196,6 +196,17 @@ nav:
     - system/index.md
     - 计算机体系结构:
       - system/arch/index.md
+    - 体系结构朋辈辅学资料:
+      - system/arch_pl/index.md
+      - 0 组成课回顾: system/arch_pl/0-OrgReview.md
+      - 1 体系结构概述与性能量化: system/arch_pl/1-Chapter1.md
+      - 2 层次化存储: system/arch_pl/2-Chapter2.md
+      - 3 ILP 与 Scoreboard: system/arch_pl/3-Chapter3-1.md
+      - 4 Tomasulo、分支预测与猜测执行: system/arch_pl/4-Chapter3-2.md
+      - 5 多发射与编译器优化: system/arch_pl/5-Chapter3-3.md
+      - 6 数据级并行: system/arch_pl/6-Chapter4.md
+      - 7 线程级并行: system/arch_pl/7-Chapter5.md
+      - 8 期末复习梳理: system/arch_pl/8-Review.md
   - 应用程序:
     - application/index.md
     - 编译原理:
