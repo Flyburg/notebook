@@ -93,6 +93,12 @@
     vertical-align: -0.2em;
 }
 
+/* 修正右上角仓库统计（tag/star/fork）图标与数字的垂直对齐
+   （Zen Maru Gothic 的 ascent 远大于 Roboto，text-top 会使图标偏高） */
+.md-source__fact:before {
+    vertical-align: -0.16em;
+}
+
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),

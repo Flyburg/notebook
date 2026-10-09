@@ -36,4 +36,31 @@ SQL 具有超过 40 多年的历史，然而近些年频频被质疑与挑战：
 
 需要注意的是 schema 一般是 fixed，具有唯一的属性名，并且每一个属性都是 atomic 的。然而 instance 是一个多集，也就是允许重复项。
 
-## 
+## DDL 与 DML
+
+SQL 包含两个 sublanguage：
+- DDL：Data Definition Language
+- DML：Data Manipulation Language
+
+RDBMS（关系型数据库管理系统）负责选择并执行算法以得到 query 的结果。**任何给定时刻，算法的选择不应该影响查询结果。**
+
+## DDL
+
+在 SQL 中，使用 `CREATE TABLE` 创建一张表。具体的语法不再赘述，需要注意的是：
+- Primary Key：主键具有唯一性约束，并且主键可以由多个 attributes 组成。
+- Foreign Key：外键 reference 的是被引用表的 pk。
+
+## DML
+
+### SELECT
+
+- `distinct` 去重
+- `order by` 排序，可以自定义顺序
+- `limit x` 只输出前 x 个结果，和 order 一块用
+
+此外还可以使用一系列聚合函数，来查看有关查询结果的一些信息，例如平均值、最大最小值、计数、求和等。
+
+- `group by` 按照属性进行分组，然后可以查看聚合函数在不同 group 下的结果
+- `having` 按照规则过滤一些组
+
+`distinct` 用在不同的位置会有不同的结果，需要注意对应的意思。
