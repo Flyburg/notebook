@@ -231,6 +231,8 @@ nav:
       - ai/ai_intro/index.md
   - 论文阅读:
     - thesis/index.md
+    - Database:
+      - BranchBench: thesis/db/branchbench/index.md
   - 实用工具:
     - tools/index.md
     - Mkdocs 网页:
@@ -243,5 +245,4 @@ nav:
   - 友链: 
     - 友链: link/friends.md
     - 如何加入友链: link/join.md
-  - 关于:
-    - about/index.md
+  - 关于: about/index.md
