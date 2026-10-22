@@ -105,6 +105,8 @@ Monte Carlo Simulation。从同一初始状态派生许多独立试验，在每�
 
 ![img](./design_space.png)
 
+（图片来自[DAPLab 官方网站](https://daplab.cs.columbia.edu/general/2026/05/26/branchable-databases-arent-ready-for-agentic-workloads.html)）
+
 **1. 分支创建和连接**
 
 Xata 和 Tiger 的创建延迟比其他系统高出多个数量级，因此作者排除它们后续的完整性能比较。Neon 创建和连接分支也显著慢于 Dolt；作者将其归因于为新分支配置计算实例、控制面网络延迟等因素。PostgreSQL 事务创建成本最低，但它不能代表具备持久独立分支能力的系统。
